@@ -53,6 +53,15 @@
 
 <body data-type="book" id="top">
 
+  <div class="myLoader" id="loader">
+    <div class="dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <div class="loadingMessage">Cargando...</div>
+  </div>
+
 <div class="fixed-bar" id="fixed-bar">
     <div class="link-container">
         <a href="curvas_en_el_plano_complejo.html" class="link" id="prev-link">
@@ -92,7 +101,8 @@
             <li><a href="#section1">Integral de Contorno</a></li>
             <li><a href="#section2">Exploración numérica 1</a></li>
             <li><a href="#section3">Exploración numérica 2</a></li>
-            <li><a href="#section4">Antiderivadas</a></li>
+            <li><a href="#section4">Propiedades</a></li>
+            <li><a href="#section5">Antiderivadas</a></li>
             <!-- Add more sections as needed -->
         </ul>
     </div>
@@ -353,6 +363,249 @@
 
             <div id="section4">
 
+                <h2>Propiedades</h2>
+
+                <p>
+                    Todas las siguientes propiedades conocidas de las integrales 
+                        pueden ser probadas directamente a partir de la definición 
+                        dada en (\ref{integral-real-cv}). Si 
+                        \( w(t) = u(t) + iv(t) \) y \( s(t) = \upsilon(t) + i\nu(t) \) 
+                        son funciones de valor complejo de una variable real \( t \) 
+                        continuas en un intervalo \([a,b],\) entonces:
+                </p>
+                <div class="scroll-wrapper">
+                    \begin{eqnarray}
+                    \int_a^b k \, w(t)\, dt &amp;=&amp; k \int_a^b w(t)\,dt, \quad k\text{ es una constante compleja,}\\
+                    \int_a^b \big[ w(t) + s(t)\big] \,dt &amp;=&amp;  \int_a^b  w(t)\,dt +  \int_a^b  s(t) \,dt,\\
+                    \int_a^b w(t)  \,dt &amp;=&amp;  \int_a^c  w(t)\,dt +  \int_c^b  w(t) \,dt \quad c\in[a,b], \\
+                    \int_a^b w(t)  \,dt &amp;=&amp;  -\int_b^a  w(t)\,dt.
+                    \end{eqnarray}
+                </div>
+
+                <p>
+                    De la definición (\ref{contour-integral}) y las 
+                    propiedades mencionadas anteriormente, se sigue inmediatamente que: 
+                </p>
+                <div class="scroll-wrapper">
+                    \begin{eqnarray}
+                    \int_{C} z_0 \, f(z) \, dz &amp;=&amp; z_0 \int_{C} f(z) \, dz, \quad z_0 \text{ es una constante compleja,}\\
+                    \int_{C} \big[ f(z) + g(z) \big] \, dz &amp;=&amp; \int_{C} \, f(z) \, dz + \int_{C}  g(z) \, dz \\
+                    \end{eqnarray}
+                </div>
+
+                <p>
+                    Ahora consideremos el contorno definido para la integral 
+                    (\ref{contour-integral}). El contorno $-C$ consiste en el
+                     mismo conjunto de puntos pero con el orden invertido, 
+                     de modo que el nuevo contorno se extiende desde $z_2$ 
+                     hasta $z_1,$ como se muestra en la Figura 3. 
+                </p>
+
+                <figure>
+                    <img src="../images/chp04/reversed-contour.svg" alt="Reversed contour" title="Reversed contour" style="width:60%;">
+                        <figcaption>
+                           El contorno $-C$ se extiende desde $z_2$ hasta $z_1.$
+                        </figcaption>
+                </figure>
+
+                <p>
+                    El contorno $-C$ tiene una representación
+                     paramétrica $z = z(-t)$ con $-b \leq t \leq -a.$ Por lo tanto, 
+                </p>
+                <div class="scroll-wrapper">
+                    \begin{eqnarray*}
+                    \int_{-C} f(z) \, dz = \int_{-b}^{-a} f\left[z(-t)\right]\frac{d}{dt}z(-t)\,dt = -\int_{-b}^{-a} f\left[z(-t)\right]z'(-t)\,dt.
+                    \end{eqnarray*}
+                </div>
+                <p>
+                    Si utilizamos la sustitución $\tau = -t$ en la última integral, entonces:
+                </p>
+                <div class="scroll-wrapper">
+                    \begin{eqnarray*}
+                    \int_{-C} f(z) \, dz = -\int_{a}^{b} f\left[z(\tau)\right]z'(\tau)\,dt.
+                    \end{eqnarray*}
+                </div>
+                <p>
+                    Por lo tanto, obtenemos la siguiente propiedad
+                </p>
+                <div class="scroll-wrapper">
+                    \begin{eqnarray}
+                    \int_{-C} f(z) \, dz = -\int_{C} f(z)\, dz.
+                    \end{eqnarray}
+                </div>
+
+                <p> 
+                    Consideremos ahora un camino $C,$ parametrizado por $z(t)$ 
+                    para $t \in [a,b],$ que consiste en un contorno $C_1$ 
+                    desde $z_1$ hasta $z_2$ seguido por un contorno $C_2$ 
+                    desde $z_2$ hasta $z_3,$ siendo el punto inicial de $C_2$ 
+                    el punto final de $C_1.$ Entonces
+                </p>
+                <div class="scroll-wrapper">
+                    \begin{eqnarray}\label{sum-paths}
+                    \int_{C} f(z) \, dz = \int_{C_1} f(z) \, dz  + \int_{C_2} f(z) \, dz.
+                    \end{eqnarray}
+                </div>
+
+                <figure>
+                    <img src="../images/chp04/sum-contours.svg" alt="Sum of contours" title="Sum of contours" style="width:60%;">
+                        <figcaption>
+                            $C= C_1 + C_2.$
+                        </figcaption>
+                </figure>
+
+                <div class="practice">
+                    <p>
+                        <strong>Ejercicio 4:</strong>
+                        
+                        Usa las propiedades para integrales de funciones de la forma $w(t)$ para demostrar
+                        (\ref{sum-paths}).
+                    </p>
+                </div>
+
+                <p>
+                    Finalmente, introducimos una desigualdad que involucra integrales de contorno, 
+                    la cual es de suma importancia en varias aplicaciones. Consideremos $C$ una 
+                    curva suave parametrizada por $z(t) = x(t) + iy(t)$ con $t \in [a,b].$ 
+                    Supongamos que las componentes $x'(t)$ y $y'(t)$ de la derivada 
+                    \[ z'(t) = x'(t) + iy'(t) \] son continuas en todo el intervalo $[a,b].$ 
+                    Entonces, la función real 
+                    \[ \left|z'(t)\right| = \sqrt{\left[x'(t)\right]^2 + \left[y'(t)\right]^2} \] 
+                    es integrable en $[a,b].$ Según la definición de longitud de arco de cálculo, 
+                    la <em>longitud de</em> $C$ es el número 
+                    \[ L = \int_a^b \left|z'(t)\right|\,dt. \]
+                </p>
+
+                <p>
+                    Si $C$ es un contorno de longitud $L$ y $f$ es una función por 
+                    tramos continua en $C$, y $M$ es una constante no negativa tal 
+                    que $\left|f(z)\right|\leq M$ para todos los puntos $z$ en $C$ 
+                    donde $f(z)$ está definida, entonces 
+                    \begin{eqnarray}\label{ML-inequality}
+                    \left|\int_C f(z)\, dz\right|\leq ML
+                    \end{eqnarray}
+                </p>
+
+                <p> Dado que $C$ es un contorno y $f$ es una función por 
+                    tramos continua en $C$, siempre existirá un número $M$ que aparece
+                     en la desigualdad $\left|f(z)\right|\leq M$. La razón es que la 
+                     función de valor real $\left|f\big(z(t)\big)\right|$ es continua 
+                     en el intervalo cerrado y acotado $[a,b]$ cuando $f$ es 
+                     continua en $C$; y esta función siempre alcanza un valor 
+                     máximo $M$ en ese intervalo. Por lo tanto, $|f(z)|$ tiene 
+                     un valor máximo en $C$ cuando $f$ es continua en él. Esto 
+                     también es cierto cuando $f$ es por tramos continua en $C$.
+                </p> 
+
+                <p> La propiedad (\ref{ML-inequality}) se utiliza frecuentemente 
+                    en la teoría de la integración compleja y a veces se conoce 
+                    como la <strong>desigualdad ML</strong>.
+                </p>
+
+                
+
+                <div class="practice">
+
+                    <p>
+                        <strong>Ejemplo 3:</strong>
+                        Sea $C$ el contorno del círculo $|z|=2$ desde $z_1=2$ hasta $z_2=2i$
+                        que se encuentra en el primer cuadrante, como se muestra en la Figura 5. 
+                        Podemos usar la desigualdad (\ref{ML-inequality}) 
+                        para demostrar que 
+                        \[   \left|\int_C \frac{dz}{z^2-1}\right|\leq \frac{\pi}{3}.                    \]
+                        sin evaluar la integral. 
+                    </p>
+                    
+
+                    <figure>
+                        <img src="../images/chp04/integral-example-3-ml-inequality.svg" alt="ML-inequality example" title="ML-inequality example" style="width:50%;">
+                            <figcaption>
+                                Círculo $|z|=2$ from $z_1=2$ to $z_2=2i.$
+                            </figcaption>
+                    </figure>
+
+                    <p>
+                        Observa que si $z$ es un punto de $C,$ entonces
+                    </p>
+                    <div class="scroll-wrapper">
+                        \begin{eqnarray*}
+                        \left|z^2-1\right|\geq \left|\left|z^2\right|- 1\right|= \left|\left|z\right|^2- 1\right| = \left|4- 1\right|=3
+                        \end{eqnarray*}
+                    </div>
+                    <p>
+                        De esta manera
+                        \[
+                         \left|\frac{1}{z^2-1}\right| = \frac{1}{ \left|z^2- 1\right|}\leq \frac{1}{3}
+                        \]
+                        Además, la longitud de $C$ es $\dfrac{1}{4}(4\pi).$ Así que, 
+                        si tomamos $M=\dfrac{1}{3}$ y 
+                        $L= \pi,$ encontramos que 
+                        \[
+                        \left|\int_C \frac{dz}{z^2-1}\right|\leq ML =  \frac{\pi}{3}.
+                        \]
+                    </p>
+                </div>
+
+                <div class="practice">
+                    <p>  
+                        <strong>Ejemplo 4:</strong>  
+                        También podemos usar la desigualdad ML para encontrar el valor de la integral  
+                        \[  
+                        \lim_{R\to \infty} \int_{C_R}\frac{z^{1/2}}{z^2+1}dz  
+                        \]  
+                        donde \(C_R\) es el arco \(z(t) = Re^{it},\) con \(t \in [0, \pi]\) y  
+                        \(z^{1/2}\) denota la rama  
+                        \[  
+                        z^{1/2} = \exp\left(\frac{1}{2}\log z\right) = \sqrt{r}e^{it/2},\quad \left(r > 0, -\frac{\pi}{2} < t < \frac{3\pi}{2}\right)  
+                        \]  
+                        de la función raíz cuadrada.  
+                    </p>
+                    
+
+                    <figure>
+                        <img src="../images/chp04/example-02-ML-inequality.svg" alt="ML-inequality example"
+                            title="ML-inequality example" style="width:60%;">
+                        <figcaption>
+                            El arco $z(t)= Re^{it},$ con $t\in[0,\pi].$ El rayo punteado indica el corte de rama.
+                        </figcaption>
+                    </figure>
+
+
+                    <p>
+                        Observa que cuando $|z|=R\gt 1,$ entonces $\abs{z^{1/2}}= \abs{\sqrt{R}e^{it/2}} = \sqrt{R}$ y
+                        \[
+                        \abs{z^2+1}\geq \abs{\abs{z^2}-1} = R^2-1.
+                        \]
+                        De esta manera, para los puntos en $C_R$, tenemos
+                    </p>
+                    <div class="scroll-wrapper">
+                        \[
+                        \abs{\frac{z^{1/2}}{z^2+1}}\leq M_R \quad \text{done} \quad M_R = \frac{\sqrt{R}}{R^2-1}.
+                        \]
+                    </div>
+                    <p>
+                        Dado que la longitud de $C_R$ es $L=\pi R,$  usando (\ref{ML-inequality}), 
+                        tenemos que
+                    </p>
+                    <div class="scroll-wrapper">
+                        \[
+                        \abs{\int_{C_R}\frac{z^{1/2}}{z^2+1}dz}\leq  M_R L = \frac{\pi R\sqrt{R}}{R^2-1} \cdot \frac{1/R^2}{1/R^2}= \frac{\dfrac{\pi}{\sqrt{R}}}{1 - \dfrac{1}{R^2}}.
+                        \]
+                    </div>
+                    <p>
+                        El término en el lado derecho tiende a cero cuando \(R\) tiende a infinito.
+                        Por lo tanto
+                        \[
+                        \lim_{R\to \infty} \int_{C_R}\frac{z^{1/2}}{z^2+1}dz=0.
+                        \]
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="section5">
+
                 <h2>Antiderivadas</h2>
 
                 <p>
@@ -368,24 +621,24 @@
                     El siguiente teorema es útil para determinar
                     cuando la integración es independiente del camino y, más aún,
                     cuando una integral alrededor de un camino cerrado tiene un valor cero.
-                    Este es conocido como la versión compleja
-                    del <em>Teorema Fundamental del Cálculo</em>.
+                    Este teorema es conocido como la versión compleja
+                    del <em>Teorema Fundamental del Cálculo</em> e 
+                    involucra el concepto de <em>antiderivada</em> 
+                    (o <em>primitiva</em>) de una función continua \(f(z)\)
+                    en un dominio \(D,\) es decir, una función  
+                    \(F(z)\) tal que \(F'(z) = f(z)\) para todo \(z \in D.\)
                 </p>
 
                 <div class="theorem" id="FTC">
-                    Sea $f(z)=F'(z)$
-                    la derivada de una función compleja $F(z)$
-                    definida en un dominio $\Omega \subset \mathbb C.$
-                    Sea $C$ un contorno arbitrario
-                    contenido en $\Omega$ con punto inicial $z_0$ y punto final $z_1.$
-                    Entonces
+                    Supongamos que  $f(z)$ es continua en un dominio $D.$
+                    Si $f(z)$ tiene una antiderivada en $D,$
+                    entonces para cualquier contorno $C$ contenido 
+                    en $D$, con punto inicial $z_1$ y punto final $z_2,$
+                    tenemos que
                     \begin{eqnarray}\label{FTC}
-                    \int_C f(z) dz = \bigg. F(z) \bigg|_{z_0}^{z_1} =F(z_1)- F(z_0).
+                    \int_C f(z) dz = \bigg. F(z) \bigg|_{z_1}^{z_2} =F(z_2)- F(z_1).
                     \end{eqnarray}
                 </div>
-
-                <p><strong>Observación:</strong> A la función $F(z)$ del <strong>Teorema 1</strong>
-                se le conoce como <strong>antiderivada</strong> (o <strong>primitiva</strong>). </p>
 
                 <div class="proof">
                     Esto se puede deducir de la definición
@@ -394,9 +647,9 @@
                     \int_C f(z) dz &amp;=&amp; \int_C F'\left(z(t)\right) \frac{dz}{dt}dt \\
                     &amp;=&amp; \int_{a}^{b} \frac{d}{dt} F \left(z(t)\right) dt \\
                     &amp;=&amp; F\left(z(b)\right) - F\left(z(a)\right) \\
-                    &amp;=&amp; F\left(z_1\right) - F\left(z_0\right)
+                    &amp;=&amp; F\left(z_2\right) - F\left(z_1\right)
                     \end{eqnarray*}
-                    donde $z_0= z(a)$ y $z_1= z(b)$ son los puntos finales del contorno $C.$
+                    donde $z_1= z(a)$ y $z_2= z(b)$ son los puntos finales del contorno $C.$
                 </div>
 
                 <p>
@@ -415,18 +668,18 @@
                     Por lo tanto el resultado demuestra
                     que la integral es independiente del camino recorrido.
                     Este hecho se ilustra en la
-                    Figura 3.
+                    Figura 6.
                 </p>
 
                 <figure>
-                    <img src="../images/chp04/equalpath.jpg" alt="Piecewise smooth curve" title="Piecewise smooth curve" style="width:50%;">
+                    <img src="../images/chp04/path-independence.svg" alt="Path independence" title="Path independence" style="width:60%;">
                     <figcaption>
                         Caminos independientes formando una curva cerrada.
                     </figcaption>
                 </figure>
 
                 <p>
-                    Considerando la Figura 3, tenemos que
+                    Considerando la Figura 6, tenemos que
                     $$\int_{C_1} f\left(z\right)dz=\int_{C_2} f\left(z\right)dz$$
                     porque
                 </p><div class="w3-responsive">
@@ -434,20 +687,102 @@
                     \int_{C} f\left(z\right)dz=\int_{C_1} f\left(z\right)dz-\int_{C_2} f\left(z\right)dz=0
                     \end{eqnarray*}
                 </div>
-                donde el contorno cerrado es es $C = C_1 - C_2.$
+                donde el contorno cerrado es es $C = C_1 - C_2.$ En otras palabras:
                 <p></p>
+                <div class="theorem">
+                    Si \(f\) es continua y tiene una antiderivada en todo un dominio \(D,\)  
+                    entonces \(\ds\int_C f(z)\,dz\) es independiente del camino.
+                </div>
+                
+                <p>
+                    Además, tenemos la siguiente condición suficiente 
+                    para la existencia de una antiderivada:
+                </p>
 
-                <!---
-		<p>
-			<strong>Final remark:</strong>
-			Sometimes it is convenient to evaluate the complex integral by reducing it
-			to two real-line integrals in the $x, y$ plane. In the definition 
-			(\ref{contour-integral}) we consider $f(z) =
-			u(x, y) + iv(x, y)$ and $dz = dx + idy$ to obtain
-			\begin{eqnarray}
-			\int_C f(z)dz=\int_C\left[\left(udx-vdy\right)+ \left(vdx-udy\right)\right]
-			\end{eqnarray}
-		</p>-->
+                <div class="theorem">
+                    Si \(f\) es continua y \(\ds\int_C f(z)\,dz\) es independiente del camino,  
+                    entonces \(f\) tiene una antiderivada en todo \(D.\)
+                </div>
+
+                <div class="proof">
+                    Consideremos la función  
+                    \begin{eqnarray}\label{anti-exists}  
+                    F(z) = \int_{z_0}^{z}f(s)\,ds  
+                    \end{eqnarray}  
+                    donde \(s\) denota una variable compleja, \(z_0\) es un punto fijo en \(D,\)  
+                    y \(z\) representa cualquier punto en \(D.\) 
+                    Asumiendo que  
+                    \(f\) es continua y \(\ds\int_C f(z)\,dz\) es independiente del camino,  
+                    queremos demostrar que \(F'(z) = f(z),\) es decir, que (\ref{anti-exists})  
+                    es una antiderivada de \(f\) en \(D.\)
+
+                    <p>
+                       Usando las propiedade de la integral tenemos
+                    </p>
+                    <div class="scroll-wrapper">
+                        \begin{eqnarray}\label{anti-def}
+                        F(z+ \Delta z) - F(z) = \int_{z_0}^{z+\Delta z}f(s)\,ds - \int_{z_0}^{z}f(s)\,ds = \int_{z}^{z+\Delta z}f(s)\,ds.
+                        \end{eqnarray}
+                    </div>
+                    <p>  
+                        Dado que \(D\) es un dominio, podemos elegir \(\Delta z\) de modo que  
+                        \(z + \Delta z\) esté en \(D.\)  
+                        Además, \(z\) y \(z + \Delta z\) pueden unirse mediante
+                        un segmento recto, como se muestra en la Figura 7.  
+                        Este es el contorno que utilizamos en la última  
+                        integral en (\ref{anti-def}). Para \(z\) fijo, podemos escribir:  
+                    </p>
+                    <div class="scroll-wrapper">
+                        \begin{eqnarray}\label{anti-expand}
+                        f(z) \Delta z =f(z) \int_{z}^{z+\Delta z}ds  = \int_{z}^{z+\Delta z}f(z)\,ds  \quad \text{o}\quad f(z) = \frac{1}{\Delta z} \int_{z}^{z+\Delta z}f(z)\,ds.
+                        \end{eqnarray}
+                    </div>
+
+                    <figure>
+                        <img src="../images/chp04/proof-anti-derivative-exists.svg" alt="Proof" title="Proof" style="width:60%;">
+                        <figcaption>
+                           Los puntos \(z\) y \(z + \Delta z\) pueden unirse mediante
+                           un segmento recto.
+                        </figcaption>
+                    </figure>
+
+                    <p>
+                        De la expressiones (\ref{anti-def}) y (\ref{anti-expand}) obtenemos
+                    </p>
+                    <div class="scroll-wrapper">
+                        \begin{eqnarray*}
+                        \frac{F(z+\Delta z)-f(z)}{\Delta z}  = \frac{1}{\Delta z} \int_{z}^{z+\Delta z}\left[f(s) - f(z)\right]\,ds.
+                        \end{eqnarray*}
+                    </div>
+
+                    <p>  
+                        Ahora, dado que \(f\) es continua, para cualquier \(\epsilon &gt; 0\)  
+                        existe un \(\delta &gt; 0\) tal que \(\abs{f(s) - f(z)} \lt \epsilon\)  
+                        siempre que \(\abs{s - z} \lt \delta.\)  
+                        Por lo tanto, si elegimos \(z + \Delta z\) lo suficientemente cerca de \(z\)  
+                        de modo que \(\abs{\Delta z} \lt \delta,\)  
+                        se deduce de la desigualdad ML que  
+                    </p>
+                    <div class="scroll-wrapper">
+                        \begin{eqnarray*}
+                        \abs{\frac{F(z+\Delta z)-f(z)}{\Delta z} } &amp;= &amp;\abs{\frac{1}{\Delta z} \int_{z}^{z+\Delta z}\left[f(s) - f(z)\right]\,ds}\\
+                        &amp;=&amp; \abs{\frac{1}{\Delta z}} \abs{ \int_{z}^{z+\Delta z}\left[f(s) - f(z)\right]\,ds}\\
+                        &amp;\leq &amp; \abs{\frac{1}{\Delta z}}\epsilon \abs{\Delta z} = \epsilon.
+                        \end{eqnarray*}
+                    </div>
+                    <p>
+                        Por lo tanto, hemos probado que
+                    </p>
+                    <div class="scroll-wrapper">
+                        \begin{eqnarray*}
+                        \lim_{\Delta z \to 0}\frac{F(z+\Delta z)-f(z)}{\Delta z}  = f(z)\quad \text{o}\quad F'(z) = f(z).
+                        \end{eqnarray*}
+                    </div>
+                </div>
+
+
+
+              
 
 
                 <br>
@@ -502,7 +837,7 @@
   <!-- Main DIV Ends here -->
 
   <!-- The Modal -->
-<div id="myModal" class="modal">
+  <div id="myModal" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
@@ -512,47 +847,8 @@
       </div>
       <div class="modal-body">
 
-        <p>
-          Este libro interactivo es <strong>gratis para todo el mundo</strong>,
-          porque tengo la firme creencia de que 
-          cualquier persona debería tener acceso 
-          a recursos de aprendizaje de alta calidad para explorar y aprender 
-          matemáticas.
-          Es por esta razón que muchos usuarios han elegido contribuir
-          a mis esfuerzos. Si tú crees en lo que hago y deseas ayudarme
-          en mi jornada, puedes hacerlo ahora con los siguientes enlaces:
-        </p>
-
-        <div class="button-container">
-          <button id="modal-link">
-            <a href="https://www.patreon.com/jcponce"><i class="fa-brands fa-patreon"></i>
-              <strong>Patreon</strong></a>
-          </button>
-          <button id="modal-link">
-            <a target="_blank"
-              href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=WTMTR7D8RYZ26&item_name=Your+support+will+help+me+to+improve+and+keep+up+to+date+the+applets+of+this+book.+Sincerely+appreciate+it%21&currency_code=AUD&source=url">
-              <strong><i class="fa-brands fa-paypal"></i> PayPal</strong>
-            </a>
-          </button>
-          <button id="modal-link">
-            <a target="_blank" href="https://jcponcemath.secure-decoration.com/">
-              <strong>Get a <i class="fa-solid fa-shirt"></i></strong>
-            </a>
-          </button>
-        </div>
-
-
-        <p>
-          Tu ayuda me permite mantener este sitio
-          y crucialmente, <strong>garantizar que permanezca de acceso libre</strong>
-          para toda persona interesada en explorar esta cautivadora rama de las 
-          matemáticas <strong>- sin anuncios que te distraigan</strong>.
-        </p>
-
-        <p>
-          No puedes contribuir en esta ocasión, ¡no hay problema! Quizá sólo quieras
-          <i class="fa-solid fa-envelope"></i> <a href="mailto:jcponcemath@gmail.com"><strong> Mandar un comentario</strong></a>
-        </p>
+        <div w3-include-html="message-modal.html"></div>
+        
         <br />
       </div>
 
@@ -562,6 +858,7 @@
     </div>
 
   </div>
+
   <!-- Button to Top -->
   <button onclick="topFunction()" id="toTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 

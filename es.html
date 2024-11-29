@@ -54,6 +54,16 @@
 
 <body data-type="book" id="top">
 
+  <div class="myLoader" id="loader">
+    <div class="dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <div class="loadingMessage">Cargando...</div>
+  </div>
+
+
   <!-- Main DIV Starts here -->
   <div class="container">
     <section data-type="chapter" id="index">
@@ -72,7 +82,7 @@
 
             <div class="hide-large ">
                 <br><br>
-                <img width="100%" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgP3eKwgEWJyXPaQoaywHwOTkfeEqu2NXxpYJW1RSjOikjsWAJhq4cnTUFJhOCi71XplIlf7llqI1qcyP5rkRp9Qd6L94vrboAinrBLOCfzsK02Camre4MjicGzkY45aUNJJ5v4IuOMuqNKTnSHxBCtwB-_KGcRkZ9ZK5gVp8azqhRHqYI/s1600/complex_prev.gif">
+                <img width="100%" src="images/intro.jpg">
             </div>
             <div class="">
 
@@ -88,7 +98,7 @@
                     <script>document.write(new Date().getFullYear());</script>
                     <br>
                     <span class="dark-mode-button" id="dark-mode-toggle">
-                        <i class="fa-regular fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
                     </span>
                 </p>
 
@@ -98,7 +108,7 @@
                     <script>document.write(new Date().getFullYear());</script>
                     <br>
                     <span class="dark-mode-button" id="dark-mode-toggle">
-                        <i class="fa-regular fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
                     </span>
                 </p>
                 <br>
@@ -119,7 +129,7 @@
         <article>
 
             <div class="language-link">
-                <a href="index.html">- English -</a>
+                <a href="/">- English</a>, <a href="it.html">Italiano -</a>
             </div>
 
 
@@ -146,11 +156,13 @@
                 <a href="contenido/series_de_laurent.html">Series de Laurent</a>,
                 <a href="contenido/integracion_compleja.html">Integración de funciones complejas</a>,
                 <a href="contenido/diferenciacion_compleja.html">Diferenciación compleja</a>,
-                <a href="contenido/topologia_plano_complejo.html">Topología del plano complejo</a> y
-                <a href="contenido/limites.html">Límites</a>.
+                <a href="contenido/topologia_plano_complejo.html">Topología del plano complejo</a>,
+                <a href="contenido/mapeo_conforme.html">Mapeo conforme</a> y
+                <a href="contenido/transformaciones_lineales_fraccionarias.html">Transformaciones lineales fraccionarias</a>.
                 <br><br>
-                Recientemente, comencé a trabajar en otros proyectos para crear
-                más libros interactivos en línea. Ya tengo un adelanto de Análisis Real.
+                Recientemente, comencé a trabajar en la <a href="it.html">versión Italiana</a> de 
+                este sitio, y en otros proyectos para crear
+                más libros interactivos en línea.  Ya tengo un adelanto de Análisis Real.
                 Si quieres saber más al respecto, consulta mi
                 <a href="https://www.patreon.com/posts/real-analysis-98129332?utm_medium=clipboard_copy&amp;utm_source=copyLink&amp;utm_campaign=postshare_creator&amp;utm_content=join_link" target="_blank">☞ Patreon</a>.
                 <br>
@@ -187,14 +199,14 @@
                 <div style="padding: 0 5px;">
                     <a target="_blank" href="https://www.geogebra.org">
                         <strong>GeoGebra</strong></a>
-                    &nbsp;-&nbsp;
+                    -
                     <a target="_blank" href="https://p5js.org/">
                         <strong>p5.js</strong></a>
-                    &nbsp;-&nbsp;
+                    -
                     <a target="_blank" href="https://cindyjs.org/">
                         <strong>Cindy.js</strong>
                     </a>
-                    &nbsp;-&nbsp;
+                    -
                     <a target="_blank" href="https://mathcell.org/">
                         <strong>MathCell.js</strong>
                     </a>
@@ -273,7 +285,7 @@
                 Si te gusta mi trabajo, puedes apoyarme usando alguno de los siguientes enlaces:
             </p>
 
-            <div style="text-wrap: wrap; display: flex; justify-content: center;">
+            <div class="hide-small hide-medium" style="text-wrap: wrap; display: flex; justify-content: center;">
                 <div style="padding: 0 15px;">
                     <i class="fa-brands fa-patreon"></i> <a href="https://www.patreon.com/jcponce">
                         <strong>Patreon</strong></a>
@@ -285,17 +297,47 @@
                 </div>
                 <div style="padding: 0 15px;">
                     <i class="fa-solid fa-shop"></i> <a target="_blank" href="https://jcponcemath.secure-decoration.com/">
-                        <strong>Tienda</strong>
+                        <strong>Shop</strong>
                     </a>
                 </div>
-                
+
                 <div style="padding: 0 15px;">
-                    <i class="fa-brands fa-square-x-twitter"></i> <a target="_blank"
-                        href="https://twitter.com/share?ref_src=twsrc%5Etfw">
-                        <strong>Post</strong>
-                    </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <i class="fa-brands fa-github"></i> <a target="_blank" href="https://github.com/sponsors/complex-analysis">
+                        <strong>Sponsor</strong>
+                    </a>
                 </div>
-                
+            </div>
+
+            <div class="hide-large">
+                <div style="text-wrap: wrap; display: flex; justify-content: center;">
+                    <div style="padding: 0 15px;">
+                        <i class="fa-brands fa-patreon"></i> <a href="https://www.patreon.com/jcponce">
+                            <strong>Patreon</strong></a>
+                    </div>
+    
+                    <div style="padding: 0 15px;">
+                        <i class="fa-brands fa-paypal"></i> <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=WTMTR7D8RYZ26&amp;item_name=Your+support+will+help+me+to+improve+and+keep+up+to+date+the+applets+of+this+book.+Sincerely+appreciate+it%21&amp;currency_code=AUD&amp;source=url">
+                            <strong>PayPal</strong></a>
+                    </div>
+    
+    
+                </div>
+                <div style="text-wrap: wrap; display: flex; justify-content: center;">
+                    
+                    <div style="padding: 0 15px;">
+                        <i class="fa-solid fa-shop"></i> <a target="_blank" href="https://jcponcemath.secure-decoration.com/">
+                            <strong>Shop</strong>
+                        </a>
+                    </div>
+    
+                    <div style="padding: 0 15px;">
+                        <i class="fa-brands fa-github"></i> <a target="_blank" href="https://github.com/sponsors/complex-analysis">
+                            <strong>Sponsor</strong>
+                        </a>
+                    </div>
+    
+    
+                </div>
             </div>
             
             <p style="text-align: center;">
@@ -328,7 +370,7 @@
   <!-- Main DIV Ends here -->
 
   <!-- The Modal -->
-<div id="myModal" class="modal">
+  <div id="myModal" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
@@ -338,47 +380,8 @@
       </div>
       <div class="modal-body">
 
-        <p>
-          Este libro interactivo es <strong>gratis para todo el mundo</strong>,
-          porque tengo la firme creencia de que 
-          cualquier persona debería tener acceso 
-          a recursos de aprendizaje de alta calidad para explorar y aprender 
-          matemáticas.
-          Es por esta razón que muchos usuarios han elegido contribuir
-          a mis esfuerzos. Si tú crees en lo que hago y deseas ayudarme
-          en mi jornada, puedes hacerlo ahora con los siguientes enlaces:
-        </p>
-
-        <div class="button-container">
-          <button id="modal-link">
-            <a href="https://www.patreon.com/jcponce"><i class="fa-brands fa-patreon"></i>
-              <strong>Patreon</strong></a>
-          </button>
-          <button id="modal-link">
-            <a target="_blank"
-              href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=WTMTR7D8RYZ26&item_name=Your+support+will+help+me+to+improve+and+keep+up+to+date+the+applets+of+this+book.+Sincerely+appreciate+it%21&currency_code=AUD&source=url">
-              <strong><i class="fa-brands fa-paypal"></i> PayPal</strong>
-            </a>
-          </button>
-          <button id="modal-link">
-            <a target="_blank" href="https://jcponcemath.secure-decoration.com/">
-              <strong>Get a <i class="fa-solid fa-shirt"></i></strong>
-            </a>
-          </button>
-        </div>
-
-
-        <p>
-          Tu ayuda me permite mantener este sitio
-          y crucialmente, <strong>garantizar que permanezca de acceso libre</strong>
-          para toda persona interesada en explorar esta cautivadora rama de las 
-          matemáticas <strong>- sin anuncios que te distraigan</strong>.
-        </p>
-
-        <p>
-          No puedes contribuir en esta ocasión, ¡no hay problema! Quizá sólo quieras
-          <i class="fa-solid fa-envelope"></i> <a href="mailto:jcponcemath@gmail.com"><strong> Mandar un comentario</strong></a>
-        </p>
+        <div w3-include-html="contenido/message-modal.html"></div>
+        
         <br />
       </div>
 
@@ -388,6 +391,7 @@
     </div>
 
   </div>
+
   <!-- Button to Top -->
   <button onclick="topFunction()" id="toTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
@@ -397,7 +401,7 @@
 
   <span id="footer-elements">
     <span style="font-weight: bold;">[</span>
-    <a href="../"><i class="fa-solid fa-house"></i> Home</a>,
+    <a href="/"><i class="fa-solid fa-house"></i> Home</a>,
     <span class="hide-small">
       <a href="https://github.com/complex-analysis"><i class="fa-solid fa-code"></i> Source</a>,
       <a href="https://github.com/complex-analysis/complex-analysis.github.io/issues"><i
@@ -410,7 +414,7 @@
 
   <br />
 
-  <a id="licence-link" rel="license" href="licencia.html">
+  <a id="licence-link" rel="license" href="contenido/licencia.html">
     <i class="fa-brands fa-creative-commons"></i>
     <i class="fa-brands fa-creative-commons-by"></i>
     <i class="fa-brands fa-creative-commons-nc"></i>

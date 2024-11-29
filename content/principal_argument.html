@@ -52,6 +52,15 @@
 
 <body data-type="book" id="top">
 
+  <div class="myLoader" id="loader">
+    <div class="dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <div class="loadingMessage">Loading...</div>
+  </div>
+
 <div class="fixed-bar" id="fixed-bar">
     <div class="link-container">
         <a href="geometric_interpretation_add_mult.html" class="link" id="prev-link">
@@ -168,6 +177,84 @@
 
             <div class="ggbElement" id="ggb-element"></div>
 
+            <hr>
+
+            <h2>
+                Arguments of products and quotients
+            </h2>
+
+            <p>
+                If  $z_1= r_1e^{\theta_1}$ and $z_2= r_2e^{\theta_2},$ then
+                \begin{eqnarray}\label{product}
+                z_1z_2 = \left(r_1r_2\right)e^{i\left(\theta_1 + \theta_2\right)}
+                \end{eqnarray}
+                implies 
+                \begin{eqnarray}\label{arg-product}
+                \arg\left(z_1z_2\right) = \arg\left(z_1\right) + \arg\left(z_2\right).
+                \end{eqnarray}
+                We can easily prove (\ref{arg-product}) by letting $\theta_1$ and $\theta_2$ denote any
+                values of $\arg\left(z_1\right)$ and $\arg\left(z_1\right),$ respectively. 
+                Then expression (\ref{product}) tells us that $\theta_1+\theta_2$ is 
+                a value of $\arg\left(z_1z_2\right).$ If the values of 
+                $\arg\left(z_1z_2\right)$ and $\arg\left(z_1\right)$ are specified, those values 
+                correspond to particular choices of $n$ and $k$ in the expressions
+                \[
+                \arg\left(z_1z_2\right) = \left(\theta_1 + \theta_2\right)+ 2n\pi\quad (n\in \Z)
+                \]
+                and 
+                \[
+                \arg\left(z_1\right) =\theta_1 + 2k\pi\quad (k\in \Z)
+                \]
+                Now, since 
+                \[
+                \left(\theta_1 + \theta_2\right)+ 2n\pi = \theta_1 + 2k\pi + \left[\theta_2 + 2(n-k)\pi\right],
+                \]
+                equation (\ref{arg-product}) is satisfied when we choose the value
+                \[
+                \arg\left(z_2\right) =\theta_2 + 2(n-k)\pi.
+                \]
+                The verification when values of 
+                $\arg\left(z_1z_2\right)$ and $\arg\left(z_2\right)$ are specified follows by symmetry.
+            </p>
+
+            <p>
+                Statement (\ref{arg-product}) is sometimes valid when $\arg$ is replaced 
+                everywhere by $\Arg.$ However, as the following example illustrates, that is not 
+                always the case.
+            </p>
+
+            <div class="practice">
+                <p>
+                    <strong>Example:</strong>
+                    Consider $z_1 = -1$ and $z_2=i.$ Then
+                    \[
+                    \Arg\left(z_1z_2\right) = \Arg(-i)=-\frac{\pi}{2}
+                    \]
+                    but
+                    \[
+                    \Arg\left(z_1\right)+\Arg\left(z_2\right) = \pi +\frac{\pi}{2}= \frac{3\pi}{2}.
+                    \]
+                    However, if we take the values of $\arg (z_1)$ and $\arg (z_2)$
+                    just used and select the value
+                    \[
+                    \Arg\left(z_1z_2\right) + 2\pi = -\frac{\pi}{2}+ 2\pi = \frac{3\pi}{2}
+                    \]
+                    of $\arg (z_1z_2),$ we find that equation (\ref{arg-product}) is satisfied.
+                </p>
+            </div>
+
+            <div class="practice">
+                <p>
+                    <strong>Exercise:</strong>
+                    Recall that $\dfrac{z_1}{z_2}=z_1z_2^{-1}.$ Use statemet (\ref{arg-product})
+                    to show that
+                    \[
+                    \arg\left(\frac{z_1}{z_2}\right) = \arg\left(z_1\right) -\arg\left(z_2\right).
+                    \]
+                </p>
+            </div>
+            
+
         </article>
     </main>
 
@@ -199,8 +286,11 @@
   </div>
   <!-- Main DIV Ends here -->
 
-  <!-- The Modal -->
-<div id="myModal" class="modal">
+  
+
+  <!-- The Modal    -->
+
+  <div id="myModal" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
@@ -210,46 +300,8 @@
       </div>
       <div class="modal-body">
 
-        <p>
-          This interactive book is <strong>free for everybody</strong>,
-          as I believe that everyone should have access to high-quality learning
-          resources to explore and learn mathematics.  
-          That's why many users choose to contribute to my efforts. 
-          If you believe in what I do and want to help me on my journey, 
-          you can do so now with the links below: 
-        </p>
-
-        <div class="button-container">
-          <button id="modal-link">
-            <a href="https://www.patreon.com/jcponce"><i class="fa-brands fa-patreon"></i>
-              <strong>Patreon</strong></a>
-          </button>
-          <button id="modal-link">
-            <a target="_blank"
-              href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=WTMTR7D8RYZ26&item_name=Your+support+will+help+me+to+improve+and+keep+up+to+date+the+applets+of+this+book.+Sincerely+appreciate+it%21&currency_code=AUD&source=url">
-              <strong><i class="fa-brands fa-paypal"></i> PayPal</strong>
-            </a>
-          </button>
-          <button id="modal-link">
-            <a target="_blank" href="https://jcponcemath.secure-decoration.com/">
-              <strong>Get a <i class="fa-solid fa-shirt"></i></strong>
-            </a>
-          </button>
-        </div>
-
-
-        <p>
-          Your contributions help me to maintain this site
-          and, crucially, <strong>ensure it remains freely accessible</strong> 
-          to anyone eager to explore this captivating field of mathematics 
-          <strong>—without any distracting ads</strong>.
-        </p>
-
-        <p>
-          You can't contribute this time, no worries! Maybe you just want to 
-          <i class="fa-solid fa-envelope"></i> <a href="mailto:jcponcemath@gmail.com"><strong> Send a
-            comment</strong></a>
-        </p>
+        <div w3-include-html="message-modal.html"></div>
+        
         <br />
       </div>
       <div class="modal-footer">
@@ -258,6 +310,8 @@
     </div>
 
   </div>
+
+
   <!-- Button to Top -->
   <button onclick="topFunction()" id="toTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 

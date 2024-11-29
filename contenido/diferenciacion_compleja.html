@@ -53,6 +53,15 @@
 
 <body data-type="book" id="top">
 
+  <div class="myLoader" id="loader">
+    <div class="dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <div class="loadingMessage">Cargando...</div>
+  </div>
+
 <div class="fixed-bar" id="fixed-bar">
     <div class="link-container">
         <a href="continuidad.html" class="link" id="prev-link">
@@ -378,7 +387,7 @@
                         Dado que $u_x = v_y$ y $u_y = -v_x$ se satisfacen y estas derivadas son continuas,
                         las condiciones del teorema se satisface en todos los puntos del plano complejo.
                         De esta manera, $f^{\prime}(z)$ existe, y además
-                    </p><div class="=scroll-wrapper">
+                    </p><div class="scroll-wrapper">
                         $$f^{\prime}(z) = u_x + iv_x = e^x \cos y + ie^x \,\text{sen}\, y.$$
                     </div>
 
@@ -456,10 +465,11 @@
                     </p>
                     <br>
                     <figure>
-                        <img src="../images/chp02/ortho-curves.png" alt="Orthogonal level curves" title="Piecewise smooth curve" style="width:60%;">
+                        <img src="../images/chp02/ortho-curves.jpg" alt="Orthogonal level curves" title="Orthogonal level curves" style="width:60%;">
                         <figcaption>
-                            Curvas de nivel ortogonales de las componentes real e imaginaria de
-                            $f(z) = z^2.$
+                            Curvas de nivel ortogonales de las componentes 
+                            real e imaginaria de $f(z) = z^2.$
+                            <a href="https://www.desmos.com/calculator/dqhfeamiea" target="_blank">Gráfica interactiva <i class="fas fa-external-link-alt"></i></a>
                         </figcaption>
                     </figure>
                 </div>
@@ -600,6 +610,32 @@
                     <p></p>
                 </div>
 
+                <p> Otra propiedad útil que utilizaremos más adelante es la siguiente: </p>
+                <div class="theorem" id="derivative-zero">
+                    Si \(f'(z) = 0\) en toda una región \(D\),  
+                    entonces \(f(z)\) es constante en \(D\).
+                </div>
+    
+                <div class="proof">
+                    Sean \(z_1, z_2 \in D.\) Sea \(c(t): [a, b] \to \C\) una curva que conecta \(z_1\) con \(z_2.\) 
+                    Es decir, \(c(a) = z_1\) y \(c(b) = z_2.\)  
+                    Usando la regla de la cadena, tenemos 
+                    \[
+                    \frac{d}{dt}f\left(c(t)\right) = f'\left(c(t)\right)\cdot c'(t) = 0,
+                    \]
+                    ya que \(f'(z) = 0\) en todas partes de \(D.\)  
+                    Si \(f(z) = u(x,y) + iv(x,y),\) entonces
+                    <div class="scroll-wrapper">
+                    \[
+                    \frac{d }{dt}u\left(c(t)\right) = 0, \quad \text{y} \quad \frac{d }{dt}v\left(c(t)\right) = 0.
+                    \]
+                    </div>
+                    Esto implica que \(u\left(c(t)\right)\) 
+                    y \(v\left(c(t)\right)\) son funciones constantes de \(t.\)  
+                    Comparando los valores en \(t = a\) y \(t = b,\) concluimos que 
+                    \(f(z_1) = f(z_2).\) Por lo tanto, \(f\) es constante en todo \(D.\)
+                </div>
+
             </div>
 
 
@@ -616,7 +652,7 @@
   <!-- Main DIV Ends here -->
 
   <!-- The Modal -->
-<div id="myModal" class="modal">
+  <div id="myModal" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
@@ -626,47 +662,8 @@
       </div>
       <div class="modal-body">
 
-        <p>
-          Este libro interactivo es <strong>gratis para todo el mundo</strong>,
-          porque tengo la firme creencia de que 
-          cualquier persona debería tener acceso 
-          a recursos de aprendizaje de alta calidad para explorar y aprender 
-          matemáticas.
-          Es por esta razón que muchos usuarios han elegido contribuir
-          a mis esfuerzos. Si tú crees en lo que hago y deseas ayudarme
-          en mi jornada, puedes hacerlo ahora con los siguientes enlaces:
-        </p>
-
-        <div class="button-container">
-          <button id="modal-link">
-            <a href="https://www.patreon.com/jcponce"><i class="fa-brands fa-patreon"></i>
-              <strong>Patreon</strong></a>
-          </button>
-          <button id="modal-link">
-            <a target="_blank"
-              href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=WTMTR7D8RYZ26&item_name=Your+support+will+help+me+to+improve+and+keep+up+to+date+the+applets+of+this+book.+Sincerely+appreciate+it%21&currency_code=AUD&source=url">
-              <strong><i class="fa-brands fa-paypal"></i> PayPal</strong>
-            </a>
-          </button>
-          <button id="modal-link">
-            <a target="_blank" href="https://jcponcemath.secure-decoration.com/">
-              <strong>Get a <i class="fa-solid fa-shirt"></i></strong>
-            </a>
-          </button>
-        </div>
-
-
-        <p>
-          Tu ayuda me permite mantener este sitio
-          y crucialmente, <strong>garantizar que permanezca de acceso libre</strong>
-          para toda persona interesada en explorar esta cautivadora rama de las 
-          matemáticas <strong>- sin anuncios que te distraigan</strong>.
-        </p>
-
-        <p>
-          No puedes contribuir en esta ocasión, ¡no hay problema! Quizá sólo quieras
-          <i class="fa-solid fa-envelope"></i> <a href="mailto:jcponcemath@gmail.com"><strong> Mandar un comentario</strong></a>
-        </p>
+        <div w3-include-html="message-modal.html"></div>
+        
         <br />
       </div>
 
@@ -676,6 +673,7 @@
     </div>
 
   </div>
+
   <!-- Button to Top -->
   <button onclick="topFunction()" id="toTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
