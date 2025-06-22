@@ -1,33 +1,34 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
-  <title>Ứng dụng của (Conformal mappings) Ánh xạ Bảo giác</title>
+  <title>  Applications of Conformal Mappings
+</title>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Main info: Dublin core -->
-  <meta name="DC.Title" content="Giải Tích Phức">
+  <meta name="DC.Title" content="Complex Analysis">
   <meta name="DC.Creator" content="Juan Carlos Ponce Campuzano">
   <meta name="DC.Date" content="26-01-2019">
   <meta name="DC.Identifier" content="ISBN-13: 978-0-6485736-0-9">
   <meta name="DC.Type" content="Interactive Resource">
   <meta name="DC.Format" content="HTML">
-  <meta name="DC.Language" content="vi-VN">
+  <meta name="DC.Language" content="en-US">
   <meta name="DC.Rights" content="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 
   <!-- social media cards -->
-  <meta property="og:title" content="Giải Tích Phức">
-  <meta property="og:description" content="Một giới thiệu tương tác trực tuyến về nghiên cứu giải tích phức.">
+  <meta property="og:title" content="Complex Analysis">
+  <meta property="og:description" content="An online interactive introduction to the study of complex analysis.">
   <meta property="og:url" content="https://complex-analysis.com/">
   <meta property="og:image" content="https://complex-analysis.com/images/complex_analysis_card.jpg">
-  <meta property="og:site_name" content="Giải Tích Phức">
-  <meta property="og:locale" content="vi_VN">
+  <meta property="og:site_name" content="Complex Analysis">
+  <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="Một giới thiệu tương tác trực tuyến về nghiên cứu giải tích phức.">
-  <meta name="twitter:title" content="Giải Tích Phức">
-  <meta name="twitter:description" content="Một giới thiệu tương tác trực tuyến về nghiên cứu giải tích phức.">
+  <meta name="twitter:card" content="An online interactive introduction to the study of complex analysis.">
+  <meta name="twitter:title" content="Complex Analysis">
+  <meta name="twitter:description" content="An online interactive introduction to the study of complex analysis.">
   <meta name="twitter:site" content="@jcponcemath">
   <meta name="twitter:image" content="https://complex-analysis.com/images/complex_analysis_card.jpg">
   <meta name="twitter:creator" content="@jcponcemath">
@@ -57,16 +58,16 @@
             <span class="arrow"><i class="fa-solid fa-arrow-left"></i></span>
         </a>
         <span class="dark-mode-button" id="dark-mode-toggle"><i class="fa-regular fa-sun"></i></span>
-        <span class="support-top-button" id="donate" title="Hỗ trợ"
+        <span class="support-top-button" id="donate" title="Support"
             onclick="document.getElementById('myModal').style.display='block'">
             <i class="fa-regular fa-heart"></i></span>
     </div>
     <div class="link">
         <a href="table_of_contents.html" class="link" id="center-link">
-            <span class="content-hover-previous">Tập Julia</span>
-            <span class="content-hover">Mục lục</span>
-            <span class="content-original">Giải tích phức</span>
-            <span class="content-hover-next">Thế phức (Complex potential)</span>
+            <span class="content-hover-previous">The Julia set</span>
+            <span class="content-hover">Table of Contents</span>
+            <span class="content-original">Complex Analysis</span>
+            <span class="content-hover-next">Complex Potential</span>
         </a>
     </div>
     <a href="complex_potential_basic_examples.html" class="link" id="next-link">
@@ -92,43 +93,44 @@
         <article>
 
 
-            <h1>Ứng dụng của <br>(Conformal mappings) Ánh xạ Bảo giác</h1>
+            <h1>Applications of <br>Conformal Mappings</h1>
 
 
             <hr>
 
-            <h2>(Hydrodynamics) Thủy động lực học</h2>
+            <h2>Hydrodynamics</h2>
 
-            <p>Nếu chúng ta có một chất lỏng không nén được, không nhớt (ở trạng thái ổn định), chúng ta quan tâm
-                đến việc tìm trường vận tốc của nó $$\mathbf V (x,y)= \left(u(x,y), v(x,y)\right).$$
-                Từ giải tích vector, chúng ta biết rằng 'không nén được' có nghĩa là độ phân kỳ
-                $\text{div}\,\mathbf V =0.$ (Chúng ta nói $\mathbf V$ là <em>không có phân kỳ (divergence free).</em>)
-                Chúng ta giả định rằng $\mathbf V$ cũng là một <em>dòng thế (potential flow)</em> và do đó không có tuần hoàn;
-                tức là $\mathbf V = \text{grad } \phi $ với $\phi$ nào đó được gọi là <em>thế
-                    vận tốc.</em> Do đó $\phi$ là điều hòa vì $$\nabla^2\phi = \text{div } \text{grad }\phi =
+            <p>If we have a (steady-state) incompressible, nonviscous fluid, we are interested
+                in finding its velocity field $$\mathbf V (x,y)= \left(u(x,y), v(x,y)\right).$$
+                From vector analysis we know that 'incompressible' means that the divergence
+                $\text{div}\,\mathbf V =0.$ (We say $\mathbf V$ is <em>divergence free.</em>)
+                We assume that $\mathbf V$ is also a <em>potential flow</em> and hence is circulation
+                free; that is $\mathbf V = \text{grad } \phi $ for some $\phi$ called the <em>velocity
+                    potential.</em> Thus $\phi$ is harmonic because $$\nabla^2\phi = \text{div } \text{grad }\phi =
                 \text{div } \mathbf V=0.$$
-                Vì vậy khi chúng ta giải $\phi$, chúng ta có thể thu được $\mathbf V$ bằng cách lấy $\mathbf V = \text{grad } \phi$. Tức là
+                Thus when we solve for $\phi$ we can obtain $\mathbf V$ by taking $\mathbf V = \text{grad } \phi$. That
+                is
                 \begin{eqnarray*}
                 u=\frac{\partial \phi }{\partial x},\quad v=\frac{\partial \phi }{\partial y}.
                 \end{eqnarray*}
             </p>
 
-            <p>Liên hợp $\psi$ của hàm điều hòa $\phi$ (sẽ tồn tại trên bất kỳ miền liên thông đơn nào) 
-                được gọi là <em>(stream function) hàm dòng</em>, và hàm giải tích
-                $$F=\phi +i\psi$$ được gọi là <em>thế phức (complex potential)</em>. </p>
+            <p>The conjugate $\psi$ of the harmonic function $\phi$ (which will exist on any simple
+                connected region) is called the <em>stream function</em>, and the analytic function
+                $$F=\phi +i\psi$$ is called the <em>complex potential</em>. </p>
 
-            <p>Hàm dòng (Stream function) phải thỏa mãn
+            <p>The stream function must satisfy
                 \begin{eqnarray*}
                 u=\frac{\partial \psi }{\partial y},\quad v=-\frac{\partial \psi }{\partial x}.
                 \end{eqnarray*}
-                Cuối cùng, các đường $\psi$ không đổi
-                có $\mathbf V$ làm tiếp tuyến của chúng, vì vậy các đường $\psi$ không đổi có thể được hiểu là
-                <i>các đường mà dọc theo đó các hạt chất lỏng chuyển động</i>; do đó có tên gọi hàm dòng (stream function).</p>
+                Finally, lines of constant $\psi$
+                have $\mathbf V$ as their tangents, so lines of constant $\psi$ may be interpreted as
+                the <i>lines along which particles of fluid move</i>; hence the name stream function.</p>
 
             <figure>
-                <img src="../images/chp06/stream.png" alt="Đường dòng (Streamlines)" title="Đường dòng (Streamlines)" style="width:65%;">
+                <img src="../images/chp06/stream.png" alt="Streamlines" title="Streamlines" style="width:65%;">
                 <figcaption>
-                    Đường dòng (Streamlines).
+                    Streamlines.
                 </figcaption>
             </figure>
 
@@ -137,7 +139,7 @@
     </main>
 
     <a href="complex_potential_basic_examples.html" style="text-decoration: none;">
-        <p class="nextPage">Thế phức (Complex potential) <i class="fa-solid fa-angles-right"></i></p>
+        <p class="nextPage">Complex Potential <i class="fa-solid fa-angles-right"></i></p>
     </a>
     <!-- Ends main content -->
 
@@ -152,17 +154,17 @@
     <div class="modal-content">
       <div class="modal-header">
         <span class="close">&times;</span><br />
-        <strong>👋 Xin chào!</strong>
+        <strong>👋 Hey there!</strong>
       </div>
       <div class="modal-body">
 
         <p>
-          Cuốn sách tương tác này <strong>miễn phí cho mọi người</strong>,
-          vì tôi tin rằng mọi người nên có quyền tiếp cận với các tài nguyên học tập
-          chất lượng cao để khám phá và học toán học.  
-          Đó là lý do tại sao nhiều người dùng chọn đóng góp cho những nỗ lực của tôi. 
-          Nếu bạn tin tưởng vào những gì tôi làm và muốn giúp tôi trên hành trình này, 
-          bạn có thể làm điều đó ngay bây giờ với các liên kết dưới đây: 
+          This interactive book is <strong>free for everybody</strong>,
+          as I believe that everyone should have access to high-quality learning
+          resources to explore and learn mathematics.  
+          That's why many users choose to contribute to my efforts. 
+          If you believe in what I do and want to help me on my journey, 
+          you can do so now with the links below: 
         </p>
 
         <div class="button-container">
@@ -178,34 +180,34 @@
           </button>
           <button id="modal-link">
             <a target="_blank" href="https://jcponcemath.secure-decoration.com/">
-              <strong>Mua <i class="fa-solid fa-shirt"></i></strong>
+              <strong>Get a <i class="fa-solid fa-shirt"></i></strong>
             </a>
           </button>
         </div>
 
 
         <p>
-          Những đóng góp của bạn giúp tôi duy trì trang web này
-          và, quan trọng hơn, <strong>đảm bảo nó vẫn có thể truy cập miễn phí</strong> 
-          cho bất kỳ ai muốn khám phá lĩnh vực toán học hấp dẫn này 
-          <strong>—mà không có bất kỳ quảng cáo gây mất tập trung nào</strong>.
+          Your contributions help me to maintain this site
+          and, crucially, <strong>ensure it remains freely accessible</strong> 
+          to anyone eager to explore this captivating field of mathematics 
+          <strong>—without any distracting ads</strong>.
         </p>
 
         <p>
-          Bạn không thể đóng góp lần này, không sao cả! Có lẽ bạn chỉ muốn 
-          <i class="fa-solid fa-envelope"></i> <a href="mailto:jcponcemath@gmail.com"><strong> Gửi một
-            nhận xét</strong></a>
+          You can't contribute this time, no worries! Maybe you just want to 
+          <i class="fa-solid fa-envelope"></i> <a href="mailto:jcponcemath@gmail.com"><strong> Send a
+            comment</strong></a>
         </p>
         <br />
       </div>
       <div class="modal-footer">
-        Cảm ơn bạn! 🙏 Tôi rất trân trọng sự hỗ trợ của bạn! 🤗
+        Thank you! 🙏 I highly appreciate your support! 🤗
       </div>
     </div>
 
   </div>
   <!-- Button to Top -->
-  <button onclick="topFunction()" id="toTop" title="Về đầu trang"><i class="fa-solid fa-arrow-up"></i></button>
+  <button onclick="topFunction()" id="toTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
   <hr>
 
@@ -213,14 +215,14 @@
 
   <span id="footer-elements">
     <span style="font-weight: bold;">[</span>
-    <a href="../"><i class="fa-solid fa-house"></i> Trang chủ</a>,
+    <a href="../"><i class="fa-solid fa-house"></i> Home</a>,
     <span class="hide-small">
-      <a href="https://github.com/complex-analysis"><i class="fa-solid fa-code"></i> Mã nguồn</a>,
+      <a href="https://github.com/complex-analysis"><i class="fa-solid fa-code"></i> Source</a>,
       <a href="https://github.com/complex-analysis/complex-analysis.github.io/issues"><i
-          class="fa-solid fa-lightbulb"></i> Vấn đề</a>,
+          class="fa-solid fa-lightbulb"></i> Issues</a>,
     </span>
     <span id="donate-footer" onclick="document.getElementById('myModal').style.display='block'">
-      <i class="fa-solid fa-heart"></i> Hỗ trợ</span>
+      <i class="fa-solid fa-heart"></i> Support</span>
     <span style="font-weight: bold;">]</span>
   </span>
   
