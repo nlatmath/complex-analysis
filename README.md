@@ -1,11 +1,11 @@
-# Giải tích phức
+# Complex Analysis
 
 A visual and interactive introduction to
 
-Nhập môn [Giải tích phức](https://complex-analysis.github.io) theo hướng trực quan và tương tác.
+Introduction to [Complex Analysis](https://complex-analysis.github.io) with a visual and interactive approach.
 
-- Bản gốc Tiếng Anh: [Complex Analysis](https://complex-analysis.github.io).
-- Bản dịch Tiếng Việt: [Giải tích phức](https://lnhutnam.github.io/complex-analysis/)
+- Original English version: [Complex Analysis](https://complex-analysis.github.io).
+- Vietnamese translation: [Complex Analysis](https://lnhutnam.github.io/complex-analysis/)
 
 ##### ISBN 978-0-6485736-0-9
 
@@ -15,67 +15,45 @@ Nhập môn [Giải tích phức](https://complex-analysis.github.io) theo hư�
 
 ## DẪN NHẬP
 
-The study of complex analysis is important for students in engineering and the
-physical sciences and is a central subject in mathematics. In addition to being
-mathematically elegant, complex analysis provides powerful tools for solving
-problems that are either very difficult or virtually impossible to solve in any
-other way.
+Việc nghiên cứu giải tích phức rất quan trọng đối với sinh viên kỹ thuật và khoa học tự nhiên, đồng thời là một môn học trung tâm trong toán học. Ngoài việc có tính thanh lịch về mặt toán học, giải tích phức còn cung cấp những công cụ mạnh mẽ để giải quyết các bài toán rất khó hoặc hầu như không thể giải quyết bằng bất kỳ cách nào khác.
 
-In this book you will find examples, problems and applets that allow you to explore complex analysis by using the visual interactive power of the computer (or tablet).
+Trong cuốn sách này, bạn sẽ tìm thấy các ví dụ, bài tập và ứng dụng cho phép bạn khám phá giải tích phức bằng cách sử dụng sức mạnh tương tác trực quan của máy tính (hoặc máy tính bảng).
 
-UPDATES! This site has been getting lots of visits which is fantastic. I have fixed some typos and modified some applets for better performance. I am also planning to add some new sections covering integration of complex functions. Finally, I will start the Spanish version so more people can enjoy learning and playing with complex analysis.
+CẬP NHẬT! Trang web này đã nhận được rất nhiều lượt truy cập, điều này thật tuyệt vời. Tôi đã sửa một số lỗi chính tả và chỉnh sửa một số ứng dụng để có hiệu suất tốt hơn. Tôi cũng đang lên kế hoạch thêm một số phần mới về tích phân của các hàm phức. Cuối cùng, tôi sẽ bắt đầu phiên bản tiếng Tây Ban Nha để nhiều người hơn có thể thưởng thức việc học và chơi với giải tích phức.
 
-Ready to get started? Skip ahead to the [Table of Contents](https://complex-analysis.github.io/content/table_of_contents.html)
+Sẵn sàng bắt đầu? Nhảy tới [Mục lục](https://complex-analysis.github.io/content/table_of_contents.html)
 
 ---
 
 ## VỀ CUỐN SÁCH NÀY
 
-This book is an interactive introduction to the theory and applications of complex functions
-from a visual point of view. However, it <strong>does not</strong> cover all the topics of a
-standard course. In fact, it is a collection of selected topics and interactive applets
-that can be used as a supplementary learning resource by anyone interested in learning
-this fascinating branch of mathematics.
+Cuốn sách này là một giới thiệu tương tác về lý thuyết và ứng dụng của các hàm phức từ góc độ trực quan. Tuy nhiên, nó <strong>không</strong> bao gồm tất cả các chủ đề của một khóa học tiêu chuẩn. Trên thực tế, đây là một tập hợp các chủ đề được chọn lọc và các ứng dụng tương tác có thể được sử dụng như một tài nguyên học tập bổ sung bởi bất kỳ ai quan tâm đến việc học tập nhánh toán học hấp dẫn này.
 
-Some of the topics covered here are basic arithmetic of complex numbers, complex functions,
-Riemann surfaces, limits, derivatives, domain coloring, analytic landscapes and
-some applications of conformal mappings.
+Một số chủ đề được đề cập ở đây là số học cơ bản của số phức, các hàm phức, bề mặt Riemann, giới hạn, đạo hàm, tô màu miền, cảnh quan giải tích và một số ứng dụng của ánh xạ bảo giác.
 
-What distinguishes this online book from other traditional texts in the first instance is the use of interactive applets that allow you to explore properties of complex numbers geometrically and analyze complex functions by using different techniques to visualize them. For the design of applets I used the following open-source softwares: [GeoGebra](https://geogebra.org/), [p5.js](https://p5js.org/), [Cindy.js](https://cindyjs.org/) and [MathCell](http://mathcell.org/).
+Điều làm cho cuốn sách trực tuyến này khác biệt với các sách giáo khoa truyền thống khác ngay từ đầu là việc sử dụng các ứng dụng tương tác cho phép bạn khám phá các tính chất của số phức theo cách hình học và phân tích các hàm phức bằng cách sử dụng các kỹ thuật khác nhau để hình dung chúng. Để thiết kế các ứng dụng, tôi đã sử dụng các phần mềm mã nguồn mở sau: [GeoGebra](https://geogebra.org/), [p5.js](https://p5js.org/), [Cindy.js](https://cindyjs.org/) và [MathCell](http://mathcell.org/).
 
-Although I advocate for the use of computers as an aid to geometric reasoning,
-I highly encourage you to practice your problem solving skills by solving
-the suggested exercises (or filling the missing details) that you will
-encounter throughout the sections.
+Mặc dù tôi ủng hộ việc sử dụng máy tính như một công cụ hỗ trợ cho lý luận hình học, tôi rất khuyến khích bạn rèn luyện kỹ năng giải quyết vấn đề của mình bằng cách giải các bài tập được đề xuất (hoặc điền vào các chi tiết còn thiếu) mà bạn sẽ gặp phải trong các phần.
 
-Think of the computer as a physicist would his laboratory. It may be used
-to check existing ideas about our world, or as a tool to discover new phenomena
-which then poses new ideas or challenges for their explanation.
-Throughout the sections I have provided detailed instructions (in some cases)
-to explore concepts and relationships about complex numbers using specific softwares,
-nevertheless you must still keep in mind that computer hardware and software
-are ephemeral things in comparison with mathematical ideas, which are timeless.
+Hãy nghĩ về máy tính như một nhà vật lý nghĩ về phòng thí nghiệm của mình. Nó có thể được sử dụng để kiểm tra các ý tưởng hiện có về thế giới của chúng ta, hoặc như một công cụ để khám phá những hiện tượng mới, từ đó đặt ra những ý tưởng hoặc thách thức mới cho việc giải thích chúng. Trong các phần, tôi đã cung cấp hướng dẫn chi tiết (trong một số trường hợp) để khám phá các khái niệm và mối quan hệ về số phức bằng cách sử dụng các phần mềm cụ thể, tuy nhiên bạn vẫn phải ghi nhớ rằng phần cứng và phần mềm máy tính là những thứ phù du so với các ý tưởng toán học, vốn là vĩnh cửu.
 
 ---
 
 ## LỜI NGƯỜI DỊCH
 
-
+[Phần này có vẻ trống trong tài liệu gốc]
 
 ---
 
 ## CÁC VẤN ĐỀ PHÁT SINH?
 
-Of course, no project such as this can be free from errors and incompleteness.
-If you find applets that don't run correctly, or the examples that aren't explained
-quite right, or a typo, please
-[report them at this project's GitHub repository](https://github.com/complex-analysis/complex-analysis.github.io/issues). Thanks for your help!
+Tất nhiên, không có dự án nào như thế này có thể tránh khỏi lỗi và sự thiếu sót. Nếu bạn tìm thấy các ứng dụng không chạy đúng, hoặc các ví dụ không được giải thích chính xác, hoặc lỗi chính tả, vui lòng [báo cáo chúng tại kho lưu trữ GitHub của dự án này](https://github.com/complex-analysis/complex-analysis.github.io/issues). Cảm ơn sự giúp đỡ của bạn!
 
 ---
 
 ## VỀ CÁC BẢN THIẾT KẾ CƠ SỞ
 
-The initial design of this book was based upon the fantastic book [Collision Detection](http://www.jeffreythompson.org/collision-detection/index.php) written by [Jeffrey Thompson](http://www.jeffreythompson.org/). If you want to learn about the algorithms behind collisions using basic geometrical shapes, you should check it! The current version, released in 2024, was built thanks to the following projects:
+Thiết kế ban đầu của cuốn sách này dựa trên cuốn sách tuyệt vời [Collision Detection](http://www.jeffreythompson.org/collision-detection/index.php) được viết bởi [Jeffrey Thompson](http://www.jeffreythompson.org/). Nếu bạn muốn tìm hiểu về các thuật toán đằng sau va chạm sử dụng các hình dạng hình học cơ bản, bạn nên xem nó! Phiên bản hiện tại, được phát hành năm 2024, được xây dựng nhờ các dự án sau:
 
 <ul>
 <li>
@@ -89,23 +67,22 @@ The initial design of this book was based upon the fantastic book [Collision Det
 </li>
 </ul>
 
-
 ---
 
 ## ❤️ Về cách hỗ trợ dự án và tiếp tục cùng nhau phát triển nó!
 
-This interactive book is free for everybody, as I believe that everyone should have access to high-quality learning resources to explore and learn mathematics. That's why many users choose to contribute to my efforts. If you believe in what I do and want to help me on my journey, you can do so now with the links below:
+Cuốn sách tương tác này miễn phí cho mọi người, vì tôi tin rằng mọi người nên có quyền tiếp cận với các tài nguyên học tập chất lượng cao để khám phá và học toán học. Đó là lý do tại sao nhiều người dùng chọn đóng góp cho những nỗ lực của tôi. Nếu bạn tin tưởng vào những gì tôi làm và muốn giúp tôi trên hành trình này, bạn có thể làm điều đó ngay bây giờ với các liên kết dưới đây:
 
 - [Patreon](https://www.patreon.com/jcponce)
 
 - [PayPal](https://paypal.me/jcarlosponce/3)
 
-- [T-shirts](https://jcponcemath.secure-decoration.com/shop/category/complex?c=4336971)
+- [Áo thun](https://jcponcemath.secure-decoration.com/shop/category/complex?c=4336971)
 
-Your contributions help me to maintain this site and, crucially, ensure it remains freely accessible to anyone eager to explore this captivating field of mathematics —without any distracting ads.
+Những đóng góp của bạn giúp tôi duy trì trang web này và, quan trọng hơn, đảm bảo nó vẫn có thể truy cập miễn phí cho bất kỳ ai muốn khám phá lĩnh vực toán học hấp dẫn này — mà không có bất kỳ quảng cáo gây mất tập trung nào.
 
 ---
 
 ## GIẤY PHÉP/ BẢN QUYỀN
 
-This book is released under the license: [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+Cuốn sách này được phát hành dưới giấy phép: [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/).
