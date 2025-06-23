@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
-  <title>  A Brief History
-</title>
+  <title>Lịch sử ngắn gọn</title>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Main info: Dublin core -->
-  <meta name="DC.Title" content="Complex Analysis">
+  <meta name="DC.Title" content="Giải Tích Phức">
   <meta name="DC.Creator" content="Juan Carlos Ponce Campuzano">
   <meta name="DC.Date" content="26-01-2019">
   <meta name="DC.Identifier" content="ISBN-13: 978-0-6485736-0-9">
   <meta name="DC.Type" content="Interactive Resource">
   <meta name="DC.Format" content="HTML">
-  <meta name="DC.Language" content="en-US">
+  <meta name="DC.Language" content="vi-VN">
   <meta name="DC.Rights" content="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 
   <!-- social media cards -->
-  <meta property="og:title" content="Complex Analysis">
-  <meta property="og:description" content="An online interactive introduction to the study of complex analysis.">
+  <meta property="og:title" content="Giải Tích Phức">
+  <meta property="og:description" content="Một giới thiệu tương tác trực tuyến về nghiên cứu giải tích phức.">
   <meta property="og:url" content="https://complex-analysis.com/">
   <meta property="og:image" content="https://complex-analysis.com/images/complex_analysis_card.jpg">
-  <meta property="og:site_name" content="Complex Analysis">
-  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Giải Tích Phức">
+  <meta property="og:locale" content="vi_VN">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="An online interactive introduction to the study of complex analysis.">
-  <meta name="twitter:title" content="Complex Analysis">
-  <meta name="twitter:description" content="An online interactive introduction to the study of complex analysis.">
+  <meta name="twitter:card" content="Một giới thiệu tương tác trực tuyến về nghiên cứu giải tích phức.">
+  <meta name="twitter:title" content="Giải Tích Phức">
+  <meta name="twitter:description" content="Một giới thiệu tương tác trực tuyến về nghiên cứu giải tích phức.">
   <meta name="twitter:site" content="@jcponcemath">
   <meta name="twitter:image" content="https://complex-analysis.com/images/complex_analysis_card.jpg">
   <meta name="twitter:creator" content="@jcponcemath">
@@ -58,16 +57,16 @@
             <span class="arrow"><i class="fa-solid fa-arrow-left"></i></span>
         </a>
         <span class="dark-mode-button" id="dark-mode-toggle"><i class="fa-regular fa-sun"></i></span>
-        <span class="support-top-button" id="donate" title="Support"
+        <span class="support-top-button" id="donate" title="Hỗ trợ"
             onclick="document.getElementById('myModal').style.display='block'">
             <i class="fa-regular fa-heart"></i></span>
     </div>
     <div class="link">
         <a href="table_of_contents.html" class="link" id="center-link">
-            <span class="content-hover-previous">Reader's Comments</span>
-            <span class="content-hover">Table of Contents</span>
-            <span class="content-original">Complex Analysis</span>
-            <span class="content-hover-next">Terminology and Notation</span>
+            <span class="content-hover-previous">Nhận xét của độc giả</span>
+            <span class="content-hover">Mục lục</span>
+            <span class="content-original">Giải tích phức</span>
+            <span class="content-hover-next">Thuật ngữ và Ký hiệu</span>
         </a>
     </div>
     <a href="terminology_notation.html" class="link" id="next-link">
@@ -86,14 +85,14 @@
     <div w3-include-html="small_screen_message.html"></div>
 
     <div class="toc-chapter" id="toc-chapter">
-        <p><i class="fa-solid fa-list"></i>Contents</p>
+        <p><i class="fa-solid fa-list"></i>Nội dung</p>
         <ul>
-            <li><a href="#section1">Geometric interpretation</a></li>
-            <li><a href="#section2">Solution to cubic equations</a></li>
-            <li><a href="#section3">The genesis of imaginary numbers</a></li>
-            <li><a href="#section4">The maturing of complex numbers</a></li>
-            <li><a href="#section5">Final comments</a></li>
-            <li><a href="#section6">References</a></li>
+            <li><a href="#section1">Diễn giải hình học</a></li>
+            <li><a href="#section2">Nghiệm của phương trình bậc ba</a></li>
+            <li><a href="#section3">Sự ra đời của số ảo</a></li>
+            <li><a href="#section4">Sự trưởng thành của số phức</a></li>
+            <li><a href="#section5">Nhận xét cuối</a></li>
+            <li><a href="#section6">Tài liệu tham khảo</a></li>
             <!-- Add more sections as needed -->
         </ul>
     </div>
@@ -103,34 +102,34 @@
     <main>
         <article>
 
-            <h1>A Brief History</h1>
+            <h1>Lịch sử ngắn gọn</h1>
 
             <div id="section1">
 
                 <hr>
 
-                <h2>Geometric interpretation of quadratic and cubic equations</h2>
+                <h2>Diễn giải hình học của phương trình bậc hai và bậc ba</h2>
 
 
-                <p>Consider a quadratic equation
+                <p>Xét phương trình bậc hai
                     \begin{eqnarray}\label{quad001}
                     x^2 = mx + n.
                     \end{eqnarray}
-                    From elementary school we have learned how to find its solutions,
-                    that is, all the values of $x$ that satisfy equation
-                    (\ref{quad001}). To do so we just need to use the widely known
-                    <em>quadratic formula</em>
+                    Từ trường tiểu học, chúng ta đã học cách tìm nghiệm của nó,
+                    tức là tất cả các giá trị của $x$ thỏa mãn phương trình
+                    (\ref{quad001}). Để làm điều này, chúng ta chỉ cần sử dụng
+                    <em>công thức nghiệm bậc hai</em> nổi tiếng
                 </p><div class="scroll-wrapper">
                     \begin{eqnarray}\label{quad002}
                     x = \frac{-b\pm \sqrt{b^2-4ac}}{2a}
                     \end{eqnarray}
                 </div>
-                of the <em>general quadratic equation </em>
+                của <em>phương trình bậc hai tổng quát</em>
                 \begin{eqnarray}\label{quad003}
                 ax^2+ bx+c = 0 .
                 \end{eqnarray}
-                By rewriting equation (\ref{quad001}) as $x^2-mx-n = 0,$ we can
-                use (\ref{quad002}) to obtain
+                Bằng cách viết lại phương trình (\ref{quad001}) thành $x^2-mx-n = 0,$ chúng ta có thể
+                sử dụng (\ref{quad002}) để có được
                 <div class="scroll-wrapper">
                     \begin{eqnarray}\label{quad004}
                     x = \frac{ m \pm \sqrt{m^2 + 4n } }{2} = \frac{m}{2} \pm \sqrt{\frac{m^2}{4} + n}
@@ -141,10 +140,10 @@
 
 
                 <p>
-                    If we plot equation (\ref{quad001}) we can observe geometrically that
-                    it represents the intersection of the parabola $y=x^2$ with the line $y = mx+n.$
-                    This can be appreciated in the following applet. Drag the sliders below and
-                    observe what happens with the intersection points $x_0$ and $x_1.$
+                    Nếu chúng ta vẽ phương trình (\ref{quad001}), chúng ta có thể quan sát một cách hình học rằng
+                    nó biểu diễn giao điểm của parabol $y=x^2$ với đường thẳng $y = mx+n.$
+                    Điều này có thể được thấy trong ứng dụng sau. Kéo các thanh trượt bên dưới và
+                    quan sát điều gì xảy ra với các điểm giao $x_0$ và $x_1.$
                 </p>
                 <div>
                     <div style="display:block;" class="ggbElement" id="ggb-element-01"></div>
@@ -152,29 +151,27 @@
 
 
                 <p>
-                    As you already noticed, we have three cases:
+                    Như bạn đã nhận ra, chúng ta có ba trường hợp:
                 </p><ol>
-                    <li>There are two points of intersection, i. e. two solutions.</li>
-                    <li>There is only one intersection point, i. e. one solution.</li>
-                    <li>There are no intersection points, i. e. there are no solutions.</li>
+                    <li>Có hai điểm giao nhau, tức là hai nghiệm.</li>
+                    <li>Chỉ có một điểm giao nhau, tức là một nghiệm.</li>
+                    <li>Không có điểm giao nào, tức là không có nghiệm.</li>
                 </ol>
                 <p></p>
 
                 <p>
-                    Surprisingly this has been known since ancient times,
-                    even without the use of mathematical symbols or computers.
-                    We know from clay tablets dated from around 2000 BCE that the Babylonian
-                    civilization possessed the quadratic formula, enabling them (in verbal form) to solve quadratic
-                    equations.
-                    Because the concept of negative numbers had to wait until the sixteenth century
-                    to appear, the Babylonians did not consider negative
-                    solutions
+                    Thật ngạc nhiên, điều này đã được biết đến từ thời cổ đại,
+                    ngay cả khi không có ký hiệu toán học hay máy tính.
+                    Chúng ta biết từ các bảng đất sét có niên đại khoảng 2000 trước Công nguyên rằng nền văn minh Babylon
+                    đã có công thức nghiệm bậc hai, cho phép họ (dưới dạng lời) giải các phương trình bậc hai.
+                    Vì khái niệm số âm phải đợi đến thế kỷ thứ mười sáu
+                    mới xuất hiện, người Babylon không xem xét các nghiệm âm
                     <span style="white-space: nowrap;">[<a href="#merzbach-boyer" alt="Merzbach-Boyer" title="Merzbach-Boyer">9</a>,
-                        pp. 29-30]</span>.
-                    We can also find implicitly equations
-                    in the geometry developed by the
-                    ancient Greeks, as we would expect when circles, parabolas, and the like
-                    are being investigated, but we do not demand that every geometric problem have a solution
+                        tr. 29-30]</span>.
+                    Chúng ta cũng có thể tìm thấy các phương trình một cách ngầm định
+                    trong hình học được phát triển bởi
+                    người Hy Lạp cổ đại, như chúng ta mong đợi khi các đường tròn, parabol, và tương tự
+                    đang được nghiên cứu, nhưng chúng ta không đòi hỏi rằng mọi bài toán hình học đều có nghiệm
                     [<a href="#merzbach-boyer" alt="Merzbach-Boyer" title="Merzbach-Boyer">9</a>, Ch. 4].
                     <!--If we ask whether a particular circle and a line intersect, then the answer
               can be "yes" or "no". And when the answer is "yes", the quadratic equation
@@ -182,19 +179,19 @@
                 </p>
 
                 <p>
-                    Now let's go back to the quadratic equation $x^2= mx+ n.$
-                    Consider the values $m=0$ and $n=-1.$
-                    If we use formula (\ref{quad004}), we obtain that
+                    Bây giờ hãy quay lại phương trình bậc hai $x^2= mx+ n.$
+                    Xét các giá trị $m=0$ và $n=-1.$
+                    Nếu chúng ta sử dụng công thức (\ref{quad004}), chúng ta có được
                     $$x = \pm\sqrt{-1}.$$
-                    What is going on here?
-                    Most of you have learned from calculus, or elementary school, that we cannot
-                    take the square root of a negative number.
-                    Then, how do we interpret this value? Geometrically speaking,
-                    we can relate the solution $x = \pm\sqrt{-1}$ to the fact that
-                    the parabola $y = x^2$ and the line $y=-1$ do
-                    not intersect each other, see Figure 1. In other words, there is no solution.
-                    In general, if $\dfrac{m^2}{4} + n \lt 0,$
-                    then equation $x^2= mx+ n$ has no solutions.
+                    Chuyện gì đang xảy ra ở đây?
+                    Hầu hết các bạn đã học từ giải tích, hoặc trường tiểu học, rằng chúng ta không thể
+                    lấy căn bậc hai của số âm.
+                    Vậy thì, làm thế nào để chúng ta diễn giải giá trị này? Về mặt hình học,
+                    chúng ta có thể liên hệ nghiệm $x = \pm\sqrt{-1}$ với việc
+                    parabol $y = x^2$ và đường thẳng $y=-1$
+                    không giao nhau, xem Hình 1. Nói cách khác, không có nghiệm.
+                    Nói chung, nếu $\dfrac{m^2}{4} + n \lt 0,$
+                    thì phương trình $x^2= mx+ n$ không có nghiệm.
                 </p>
 
 
@@ -205,30 +202,30 @@
 
 
                 <p>
-                    It is argued that this led to the invention of a new number denoted by $i,$
-                    which is equal to $\sqrt{-1},$ and it was given the name "imaginary".
-                    If we use $i$ as a number such that $i^2 = -1,$
-                    then this value is the solution of the equation $x^2=-1.$
+                    Có ý kiến cho rằng điều này đã dẫn đến việc phát minh ra một số mới được ký hiệu bằng $i,$
+                    bằng $\sqrt{-1},$ và được đặt tên là "ảo".
+                    Nếu chúng ta sử dụng $i$ như một số sao cho $i^2 = -1,$
+                    thì giá trị này là nghiệm của phương trình $x^2=-1.$
                 </p>
 
                 <p>
-                    It is also a common practice to point out in courses of mathematics that
-                    <em>complex numbers</em>, denoted as $a + b\sqrt{-1},$ are needed to solve certain
-                    quadratic equations, such as $x^2+1=0.$
-                    However, complex numbers emerged, in fact, from the need to solve cubic equations.
-                    Furthermore, when quadratic and cubic equations first appeared,
-                    at that time, there was no need to have solutions for all equations.
+                    Cũng là một thông lệ phổ biến để chỉ ra trong các khóa học toán học rằng
+                    <em>số phức</em>, được ký hiệu là $a + b\sqrt{-1},$ cần thiết để giải một số
+                    phương trình bậc hai, chẳng hạn như $x^2+1=0.$
+                    Tuy nhiên, số phức xuất hiện, trên thực tế, từ nhu cầu giải phương trình bậc ba.
+                    Hơn nữa, khi phương trình bậc hai và bậc ba lần đầu xuất hiện,
+                    vào thời điểm đó, không cần thiết phải có nghiệm cho tất cả các phương trình.
                 </p>
 
                 <p>
-                    So where did complex numbers really come into importance? To answer this let's
-                    consider the cubic equation
+                    Vậy số phức thực sự trở nên quan trọng ở đâu? Để trả lời điều này, hãy
+                    xét phương trình bậc ba
                     \begin{eqnarray}\label{cubic001}
                     x^3 = p x + q.
                     \end{eqnarray}
-                    Geometrically, this equation represents the intersection of the cubic
-                    $y = x^3$ with the line $y = px + q,$
-                    as shown in the following applet. Drag sliders below and observe what happens.
+                    Về mặt hình học, phương trình này biểu diễn giao điểm của hàm bậc ba
+                    $y = x^3$ với đường thẳng $y = px + q,$
+                    như được hiển thị trong ứng dụng sau. Kéo các thanh trượt bên dưới và quan sát điều gì xảy ra.
                 </p>
 
 
@@ -236,15 +233,15 @@
                 
 
                 <p>
-                    As you can observe no matter what line is defined by the parameters $p$ and $q,$
-                    it will always intersect the cubic somewhere, even when the line
-                    $px+q$ is perpendicular to the $x$-axis and far from the origin (i. e. when
-                    $p$ and $q$ are both very large positive/negative numbers).
-                    This is because the cubic
-                    goes all the way from $-\infty$ to $+\infty.$
-                    Thus, there is no line you can draw that won't intersect this cubic.
-                    This example is very different from the quadratic case which was a parabola $x^2$
-                    and you could define a line $mx + n$ such that it won't intersect the parabola.
+                    Như bạn có thể quan sát, bất kể đường thẳng nào được xác định bởi các tham số $p$ và $q,$
+                    nó sẽ luôn giao với hàm bậc ba ở đâu đó, ngay cả khi đường thẳng
+                    $px+q$ vuông góc với trục $x$ và xa gốc tọa độ (tức là khi
+                    $p$ và $q$ đều là những số dương/âm rất lớn).
+                    Điều này là do hàm bậc ba
+                    đi từ $-\infty$ đến $+\infty.$
+                    Do đó, không có đường thẳng nào bạn có thể vẽ mà sẽ không giao với hàm bậc ba này.
+                    Ví dụ này rất khác với trường hợp bậc hai là parabol $x^2$
+                    và bạn có thể xác định một đường thẳng $mx + n$ sao cho nó sẽ không giao với parabol.
                 </p>
 
                 <hr>
@@ -253,15 +250,15 @@
 
             <div id="section2">
 
-                <h2>Solution to cubic equations</h2>
+                <h2>Nghiệm của phương trình bậc ba</h2>
 
 
                 <p>
-                    It is well known that the solution of the cubic $x^3 = px + q$
-                    was developed in the Renaissance (15th and 16th centuries) by Italian
-                    mathematicians. Scipione del Ferro (1465-1526) and Niccolò Tartaglia (1500-1557),
-                    followed by Girolamo Cardano (1501-1576), showed that $x^3 = px + q$
-                    has a solution given by
+                    Ai cũng biết rằng nghiệm của phương trình bậc ba $x^3 = px + q$
+                    được phát triển trong thời kỳ Phục Hưng (thế kỷ 15 và 16) bởi các
+                    nhà toán học Ý. Scipione del Ferro (1465-1526) và Niccolò Tartaglia (1500-1557),
+                    tiếp theo là Girolamo Cardano (1501-1576), đã chỉ ra rằng $x^3 = px + q$
+                    có nghiệm được cho bởi
                 </p><div class="scroll-wrapper">
                     \begin{eqnarray}\label{cubic002}
                     x = \sqrt[3]{\frac{q}{2} + \sqrt{\frac{q^2}{4} - \frac{p^3}{27}}} -
@@ -269,7 +266,7 @@
                     \end{eqnarray}
                 </div>
 
-                This is known as Cardano's formula and here we are using modern notation.
+                Đây được gọi là công thức Cardano và ở đây chúng ta sử dụng ký hiệu hiện đại.
                 <p></p>
 
                 <div class="figure-container">
@@ -289,24 +286,24 @@
                 </div>
 
                 <p>
-                    To see how this works consider the
-                    equation $x^3 = -6 x+ 20.$
-                    In this case $p=-6$ and $q=20.$ If we plug these numbers into
-                    (\ref{cubic002}), we obtain the solution
+                    Để xem cách thức hoạt động, hãy xét
+                    phương trình $x^3 = -6 x+ 20.$
+                    Trong trường hợp này $p=-6$ và $q=20.$ Nếu chúng ta thay các số này vào
+                    (\ref{cubic002}), chúng ta có được nghiệm
                 </p><div class="scroll-wrapper">
                     $$x = \displaystyle \sqrt[3]{10 + \sqrt{108}} -
                     \sqrt[3]{- 10 + \sqrt{108}}.$$
                 </div>
-                Simplifying we obtain $x=2,$ a solution of the given equation since
+                Đơn giản hóa, chúng ta có được $x=2,$ một nghiệm của phương trình đã cho vì
                 <div class="scroll-wrapper">
                     $$8=(2)^3 = -6(2)+ 20 = -12+20=8.$$
                 </div>
 
-                Thus, this formula seems to work very well, at least for this case.
+                Do đó, công thức này có vẻ hoạt động rất tốt, ít nhất là cho trường hợp này.
                 <p></p>
 
                 <div class="practice">
-                    <p><strong>Exercise:</strong> Try to solve $x^3=6x+6$ using Cardano's formula.</p>
+                    <p><strong>Bài tập:</strong> Hãy thử giải $x^3=6x+6$ bằng công thức Cardano.</p>
                 </div>
 
                 <hr>
@@ -315,20 +312,20 @@
 
             <div id="section3">
 
-                <h2>The genesis of imaginary numbers</h2>
+                <h2>Sự ra đời của số ảo</h2>
 
                 <p>
-                    A few years later after the discovery of Cardano's formula,
-                    the Italian engineer-architect Rafael Bombelli (1526-1572)
-                    recognized that there was something strange and paradoxical about this formula.
-                    He considered the equation
+                    Vài năm sau khi phát hiện ra công thức Cardano,
+                    kỹ sư-kiến trúc sư Ý Rafael Bombelli (1526-1572)
+                    nhận ra rằng có điều gì đó kỳ lạ và nghịch lý về công thức này.
+                    Ông xét phương trình
                     \begin{eqnarray}\label{cubic003}
                     x^3= 15 x+ 4
                     \end{eqnarray}
-                    and, with perhaps just a little
-                    pondering, you can see that $x = 4$ is a solution. This can also
-                    be seen in Figure 4. In fact there are three solutions, but
-                    Bombelli did not consider negative values, so we won't either.
+                    và, có lẽ chỉ với một chút
+                    suy nghĩ, bạn có thể thấy rằng $x = 4$ là một nghiệm. Điều này cũng có thể
+                    được thấy trong Hình 4. Thực tế có ba nghiệm, nhưng
+                    Bombelli không xem xét các giá trị âm, vì vậy chúng ta cũng sẽ không xét.
                 </p>
 
                 <figure>
@@ -340,45 +337,45 @@
 
                 <div class="w3-responsive">
                     <p>
-                        Then Bombelli used Cardano's formula to solve $x^3= 15 x+ 4.$
-                        Thus, considering $p = 15$ and $q=4,$
-                        he obtained
+                        Sau đó Bombelli sử dụng công thức Cardano để giải $x^3= 15 x+ 4.$
+                        Do đó, xét $p = 15$ và $q=4,$
+                        ông có được
                     </p><div class="scroll-wrapper">
                         \begin{eqnarray}\label{cubic004}
                         x = \displaystyle \sqrt[3]{2 + \sqrt{-121}} + \sqrt[3]{2 - \sqrt{-121}}.
                         \end{eqnarray}
                     </div>
 
-                    Here he encountered a very unusual value. If Cardano's formula
-                    is correct, this number must be equal to 4.
-                    Yet this must be nonsense and the value cannot be real,
-                    because inside the cube root we are taking
-                    the square root of a negative number, an absolute impossibility
-                    at that time (and also nowadays).
-                    Cardano also encountered this difficulty but he did not face it up.
-                    He did once mention imaginary numbers, but in connection
-                    with a quadratic equation and accompanied by the comment that
-                    these numbers were "as subtle as they are useless"
+                    Ở đây ông gặp phải một giá trị rất bất thường. Nếu công thức Cardano
+                    đúng, số này phải bằng 4.
+                    Tuy nhiên điều này phải là vô nghĩa và giá trị không thể là thực,
+                    bởi vì bên trong căn bậc ba chúng ta đang lấy
+                    căn bậc hai của một số âm, điều hoàn toàn không thể
+                    vào thời điểm đó (và cả ngày nay nữa).
+                    Cardano cũng gặp khó khăn này nhưng ông không đối mặt với nó.
+                    Ông đã từng đề cập đến số ảo, nhưng liên quan đến
+                    một phương trình bậc hai và kèm theo nhận xét rằng
+                    những số này "tinh tế đến mức chúng vô dụng"
                     [<a href="#cardano" alt="Cardano" title="Cardano">2</a>, Ch.
                     37, Rule II].
                     <p></p>
                 </div>
 
                 <p>
-                    However, Bombelli overcome this difficulty
-                    by seeing that the weird expression (\ref{cubic004})
-                    that Cardano's formula gives for $x$ is actually real,
-                    but expressed in a very unfamiliar manner. This
-                    insight did not come easily. As Bombelli wrote in his book <em>L'Algebra</em>:
+                    Tuy nhiên, Bombelli đã vượt qua khó khăn này
+                    bằng cách thấy rằng biểu thức kỳ lạ (\ref{cubic004})
+                    mà công thức Cardano đưa ra cho $x$ thực sự là thực,
+                    nhưng được biểu diễn theo một cách rất không quen thuộc. Cái nhìn sâu sắc này
+                    không đến dễ dàng. Như Bombelli đã viết trong cuốn sách <em>L'Algebra</em> của mình:
                 </p><div style="margin-left: 30px;margin-right: 30px;">
                     <p>
-                        And although to many this will appear an extravagant thing,
-                        because even I held this opinion some time ago, since it appeared
-                        to me more sophistic than true, nevertheless I searched hard and
-                        found the demonstration, which will be noted below. ... But let
-                        the reader apply all his strength of mind, for [otherwise]
-                        even he will find himself deceived.
-                        [<a href="bombelli" alt="Bombelli" title="Bombelli">1</a>, pp. 293-294;
+                        Và mặc dù với nhiều người điều này sẽ có vẻ là một điều kỳ quặc,
+                        bởi vì ngay cả tôi cũng từng có ý kiến này một thời gian trước, vì nó có vẻ
+                        đối với tôi là ngụy biện hơn là sự thật, tuy nhiên tôi đã tìm kiếm chăm chỉ và
+                        tìm thấy chứng minh, sẽ được ghi chú bên dưới. ... Nhưng hãy để
+                        người đọc áp dụng tất cả sức mạnh trí tuệ của mình, vì [nếu không]
+                        ngay cả ông ta cũng sẽ thấy mình bị lừa.
+                        [<a href="bombelli" alt="Bombelli" title="Bombelli">1</a>, tr. 293-294;
                         <a href="#oconnor-robertson" alt="O'Connor-Robertson" title="O'Connor-Robertson">10</a>]
                     </p>
                 </div>
@@ -386,39 +383,38 @@
                 <figure>
                     <img src="../images/chp01/algebra-bombelli.jpg" alt="L'Algebra" title="L'Algebra" style="width:45%;">
                     <figcaption>
-                        <em>L'Algebra</em> by Rafael Bombelli: frontispiece of
-                        the Bologna edition of 1579.
+                        <em>L'Algebra</em> của Rafael Bombelli: trang bìa của
+                        ấn bản Bologna năm 1579.
                     </figcaption>
                 </figure>
                 <p></p>
 
                 <div>
                     <p>
-                        Bombelli's great insight was simply to treat $\sqrt{-1}$ as a number and to operate with
-                        it following some specific arithmetic rules (the same kind of rules that we use nowadays).
-                        Thus he discovered that
+                        Cái nhìn sâu sắc tuyệt vời của Bombelli đơn giản là xử lý $\sqrt{-1}$ như một số và thao tác với
+                        nó theo một số quy tắc số học cụ thể (cùng loại quy tắc mà chúng ta sử dụng ngày nay).
+                        Do đó ông phát hiện ra rằng
                     </p><div class="scroll-wrapper">
-                        $$\sqrt[3]{2+ \sqrt{-121}} = 2 + \sqrt{-1} \quad \text{and} \quad \sqrt[3]{2- \sqrt{-121}} = 2 -
+                        $$\sqrt[3]{2+ \sqrt{-121}} = 2 + \sqrt{-1} \quad \text{và} \quad \sqrt[3]{2- \sqrt{-121}} = 2 -
                         \sqrt{-1} .$$
                     </div>
-                    By substituting these values in (\ref{cubic004}) Bombelli obtained
+                    Bằng cách thay thế các giá trị này vào (\ref{cubic004}) Bombelli có được
                     <div class="scroll-wrapper">
                         $$x = 2 + \sqrt{-1} + 2 - \sqrt{-1}.$$
                     </div>
-                    Then he showed that the squared roots of negative numbers cancel each other
-                    [<a href="#bombelli" alt="Bombelli" title="Bombelli">1</a>, p. 169;
-                    <a href="#gonzalez-velasco" alt="González-velasco" title="González-Velasco">7</a>, p. 164]. That
-                    is
+                    Sau đó ông chỉ ra rằng các căn bậc hai của số âm triệt tiêu lẫn nhau
+                    [<a href="#bombelli" alt="Bombelli" title="Bombelli">1</a>, tr. 169;
+                    <a href="#gonzalez-velasco" alt="González-velasco" title="González-Velasco">7</a>, tr. 164]. Tức là
                     <div class="scroll-wrapper">
                         $$x = 2 + \cancel{\sqrt{-1}} + 2 - \cancel{\sqrt{-1}}.$$
                     </div>
-                    And concluded that $x = 4$ is actually the solution of $x^3=15x+4$
-                    obtained from Cardano's formula [<a href="#bombelli" alt="Bombelli" title="Bombelli">1</a>, p.
+                    Và kết luận rằng $x = 4$ thực sự là nghiệm của $x^3=15x+4$
+                    thu được từ công thức Cardano [<a href="#bombelli" alt="Bombelli" title="Bombelli">1</a>, tr.
                     294],
-                    see Figure 6.
-                    This trick works in only a few cases, however, it helped to
-                    understand imaginary numbers and to take their cube roots or
-                    manipulate them when they appear aside real numbers.
+                    xem Hình 6.
+                    Thủ thuật này chỉ hoạt động trong một số ít trường hợp, tuy nhiên, nó đã giúp
+                    hiểu về số ảo và lấy căn bậc ba của chúng hoặc
+                    thao tác với chúng khi chúng xuất hiện bên cạnh số thực.
                     <p></p>
                 </div>
 
@@ -428,10 +424,10 @@
 
 
                     <figure>
-                        <img src="../images/chp01/bombelli-solution.jpg" alt="Bombelli's solution" title="Bombelli's solution" style="width:100%;">
+                        <img src="../images/chp01/bombelli-solution.jpg" alt="Nghiệm của Bombelli" title="Nghiệm của Bombelli" style="width:100%;">
 
                         <figcaption>
-                            Bombelli's original solution.
+                            Nghiệm gốc của Bombelli.
                         </figcaption>
                     </figure>
 
@@ -453,7 +449,7 @@
 
                         </p>
                         <figcaption>
-                            Solution in modern algebra.
+                            Nghiệm trong đại số hiện đại.
                         </figcaption>
                     </figure>
 
@@ -465,30 +461,30 @@
 
 
                 <p>
-                    Of course, as you can see in Figure 6,
-                    Bombelli did not have at his disposal the power of today's algebraic notation
-                    (neither computers) and his computations were limited to numbers in "real domain".
-                    In fact, most of Italian mathematicians at that time tended to think of cubes or squares
-                    as geometric objects rather than algebraic quantities. However, he is credited for
-                    proving the reality of the roots of the cubic $x^3=15x+4,$
-                    since he demonstrated the extraordinary fact that real numbers could be
-                    engendered by imaginary numbers.
+                    Tất nhiên, như bạn có thể thấy trong Hình 6,
+                    Bombelli không có ký hiệu đại số mạnh mẽ như ngày nay
+                    (cũng không có máy tính) và các tính toán của ông bị giới hạn trong "miền thực".
+                    Thực tế, hầu hết các nhà toán học Ý vào thời điểm đó có xu hướng nghĩ về hình lập phương hoặc hình vuông
+                    như các đối tượng hình học hơn là các đại lượng đại số. Tuy nhiên, ông được ghi nhận vì đã
+                    chứng minh tính thực của nghiệm của phương trình bậc ba $x^3=15x+4,$
+                    vì ông đã chứng minh sự thật phi thường rằng số thực có thể được
+                    sinh ra bởi số ảo.
                 </p>
 
                 <p>
-                    Cardano's formula forced mathematicians
-                    to confront square roots of negative numbers.
+                    Công thức Cardano buộc các nhà toán học
+                    phải đối mặt với căn bậc hai của số âm.
 
-                    This historical incident is another example that negates the widespread
-                    view that mathematics is "made up" by mathematicians. As is often the case, it is
-                    the mathematics itself that speaks to us.
-                    From this time on, imaginary numbers lost some of their mystical
-                    character, although their full acceptance as <em>bona fide</em>
-                    numbers came only in the 1800s.
+                    Sự kiện lịch sử này là một ví dụ khác phủ định quan điểm phổ biến
+                    rằng toán học được "tạo ra" bởi các nhà toán học. Như thường xảy ra, chính
+                    toán học nói với chúng ta.
+                    Từ thời điểm này trở đi, số ảo mất đi phần nào tính chất thần bí
+                    của chúng, mặc dù việc chấp nhận đầy đủ chúng như những
+                    số <em>bona fide</em> chỉ đến vào những năm 1800.
                 </p>
 
                 <div class="practice">
-                    <p><strong>Exercise:</strong> Verify that $\sqrt[3]{2 \pm \sqrt{-121}} = 2 \pm \sqrt{-1}.$</p>
+                    <p><strong>Bài tập:</strong> Hãy xác minh rằng $\sqrt[3]{2 \pm \sqrt{-121}} = 2 \pm \sqrt{-1}.$</p>
                 </div>
 
                 <hr>
@@ -499,30 +495,30 @@
             <div id="section4">
 
 
-                <h2>The maturing of complex numbers</h2>
+                <h2>Sự trưởng thành của số phức</h2>
 
                 <p>
-                    Many mathematicians after Cardano and Bombelli made important contributions to
-                    imaginary (or complex) numbers. For example René Descartes (1596-1650)
-                    coined the term "imaginary" in his book in <em>La Géométrie</em> of 1637 as follows:
+                    Nhiều nhà toán học sau Cardano và Bombelli đã có những đóng góp quan trọng cho
+                    số ảo (hoặc số phức). Ví dụ René Descartes (1596-1650)
+                    đã đặt ra thuật ngữ "ảo" trong cuốn sách <em>La Géométrie</em> năm 1637 như sau:
 
                 </p>
 
                 <div style="margin-left: 30px;margin-right: 30px;">
-                    <p>Neither the true nor the false [negative] roots are always real; but sometimes
-                        only imaginary. [<a href="#descartes" alt="Descartes" title="Descartes">4</a>, p. 380]
+                    <p>Không phải nghiệm đúng hay sai [âm] luôn luôn thực; mà đôi khi
+                        chỉ là ảo. [<a href="#descartes" alt="Descartes" title="Descartes">4</a>, tr. 380]
                     </p>
                 </div>
 
                 <p>
-                    John Wallis (1616-1703) showed how to represent geometrically complex
-                    roots of a quadratic equation with real coefficients
-                    [<a href="#kline" alt="Kline" title="Kline">8</a>, p. 594].
-                    Caspar Wessel (1745-1818) and
+                    John Wallis (1616-1703) đã chỉ ra cách biểu diễn hình học
+                    nghiệm phức của một phương trình bậc hai với hệ số thực
+                    [<a href="#kline" alt="Kline" title="Kline">8</a>, tr. 594].
+                    Caspar Wessel (1745-1818) và
                     <span style="white-space: nowrap;">Jean-Robert</span>
                     Argan (1768-1822)
-                    provided geometric representations of complex numbers as vectors
-                    [<a href="#gonzalez-velasco" alt="González-Velasco" title="González-Velasco">7</a>, pp. 185-190].
+                    đã cung cấp biểu diễn hình học của số phức như vector
+                    [<a href="#gonzalez-velasco" alt="González-Velasco" title="González-Velasco">7</a>, tr. 185-190].
                 </p>
 
 
@@ -536,83 +532,83 @@
                 </figure>
 
                 <p>
-                    Leonard Euler (1707-1783) standardized the notation "$i=\sqrt{-1}$"
-                    [<a href="#euleri">6</a>, p. 184] and used imaginary numbers to solve
-                    quadratic and cubic equations, in spite of the fact that he
-                    was still suspicious of these numbers.
-                    In his <em>Algebra</em>, for example, he mentioned:
+                    Leonard Euler (1707-1783) đã chuẩn hóa ký hiệu "$i=\sqrt{-1}$"
+                    [<a href="#euleri">6</a>, tr. 184] và sử dụng số ảo để giải
+                    các phương trình bậc hai và bậc ba, mặc dù thực tế là ông
+                    vẫn nghi ngờ những số này.
+                    Trong cuốn <em>Algebra</em> của mình, ví dụ, ông đã đề cập:
                 </p>
 
                 <div style="margin-left: 30px;margin-right: 30px;">
-                    <p>[...] since all numbers which it is possible to conceive
-                        are either greater or less than 0, or are 0 itself, it is
-                        evident that we cannot rank the square root of a negative
-                        number amongst possible numbers, and we must therefore
-                        say that it is an impossible quantity. In this manner we are
-                        led to the idea of numbers, which from their nature are impossible;
-                        and therefore they are usually called imaginary
-                        quantities, because they exist merely in the imagination.
-                        [<a href="#euler-algebra" alt="Euler-Algebra" title="Euler-Algebra">5</a>, p. 43]
+                    <p>[...] vì tất cả các số mà có thể hình dung
+                        đều lớn hơn hoặc nhỏ hơn 0, hoặc là 0,
+                        rõ ràng là chúng ta không thể xếp căn bậc hai của một số âm
+                        vào số các số có thể, và do đó chúng ta phải
+                        nói rằng đó là một đại lượng không thể. Theo cách này chúng ta được
+                        dẫn đến ý tưởng về những số, mà theo bản chất chúng là không thể;
+                        và do đó chúng thường được gọi là các đại lượng ảo,
+                        vì chúng chỉ tồn tại trong trí tưởng tượng.
+                        [<a href="#euler-algebra" alt="Euler-Algebra" title="Euler-Algebra">5</a>, tr. 43]
                     </p>
                 </div>
 
                 <p>
-                    Lest anyone takes this as a condemnation, he continued:
+                    Để không ai coi điều này như một sự lên án, ông tiếp tục:
                 </p>
 
                 <div style="margin-left: 30px;margin-right: 30px;">
-                    <p>notwithstanding this, these numbers present
-                        themselves to the mind; they exist in our
-                        imagination, and we still have a sufficient idea of
-                        them; [...] nothing prevents us from making use of these
-                        imaginary numbers, and employing them in calculation.
-                        <span style="white-space: nowrap;">[<a href="#euler-algebra" alt="Euler" title="Euler">5</a>, p.
+                    <p>mặc dù vậy, những số này hiện diện
+                        với tâm trí; chúng tồn tại trong
+                        trí tưởng tượng của chúng ta, và chúng ta vẫn có một ý tưởng đầy đủ về
+                        chúng; [...] không có gì ngăn cản chúng ta sử dụng những
+                        số ảo này, và sử dụng chúng trong tính toán.
+                        <span style="white-space: nowrap;">[<a href="#euler-algebra" alt="Euler" title="Euler">5</a>, tr.
                             43]</span>
 
                     </p>
                 </div>
 
                 <p>
-                    Later Carl Friedrich Gauss (1777-1855) introduced the term "complex number"
-                    referring to numbers of the form $a+ b \, i $
-                    [<a href="#gonzalez-velasco" alt="González-Velasco" title="González-Velasco">7</a>, p. 191].
-                    He also gave four proofs of the <em>fundamental theorem of algebra</em> over the course of
-                    his long career. This theorem tells us that
-                    any $n$th-degree polynomial has $n$ roots, some or all of which
-                    may be imaginary. The first proof that Gauss gave was in his doctoral
-                    dissertation of 1799. The last (and perhaps the most elegant)
-                    allows the use of complex numbers not only for the variable but
-                    for the coefficients as well. Since this necessarily depended on the recognition
-                    of complex numbers, Gauss helped to solidify the position of these
-                    numbers [<a href="#kline" alt="Kline" title="Kline">8</a>, Vol. 2, p. 595].
+                    Sau đó Carl Friedrich Gauss (1777-1855) giới thiệu thuật ngữ "số phức"
+                    chỉ các số có dạng $a+ b \, i $
+                    [<a href="#gonzalez-velasco" alt="González-Velasco" title="González-Velasco">7</a>, tr. 191].
+                    Ông cũng đưa ra bốn chứng minh cho <em>định lý cơ bản của đại số</em> trong suốt
+                    sự nghiệp dài của mình. Định lý này nói với chúng ta rằng
+                    bất kỳ đa thức bậc $n$ nào cũng có $n$ nghiệm, một số hoặc tất cả có thể
+                    là ảo. Chứng minh đầu tiên mà Gauss đưa ra là trong luận án tiến sĩ
+                    năm 1799. Chứng minh cuối cùng (và có lẽ là thanh lịch nhất)
+                    cho phép sử dụng số phức không chỉ cho biến mà
+                    cả cho các hệ số. Vì điều này nhất thiết phụ thuộc vào việc công nhận
+                    số phức, Gauss đã giúp củng cố vị trí của những
+                    số này [<a href="#kline" alt="Kline" title="Kline">8</a>, Vol. 2, tr. 595].
                 </p>
 
 
                 <p>
-                    The first rigorous definition of complex numbers was given
-                    by William Rowan Hamilton (1805-1865). In 1833 he proposed to the Irish Academy
-                    that a complex number $a+ ib$ can be considered as a <em>couple</em> $(a, b),$
-                    with $a,b$ real numbers
-                    <span style="white-space: nowrap;">[<a href="#gonzalez-velasco" alt="González-Velasco" title="González-Velasco">7</a>, pp. 192-193].</span>
-                    Then he defined addition and multiplication
-                    of <em>couples</em> as follows:
+                    Định nghĩa chặt chẽ đầu tiên về số phức được đưa ra
+                    bởi William Rowan Hamilton (1805-1865). Năm 1833 ông đề xuất với Viện Hàn lâm Ireland
+                    rằng một số phức $a+ ib$ có thể được xem như một <em>cặp</em> $(a, b),$
+                    với $a,b$ là các số thực
+                    <span style="white-space: nowrap;">[<a href="#gonzalez-velasco" alt="González-Velasco" title="González-Velasco">7</a>, tr. 192-193].</span>
+                    Sau đó ông định nghĩa phép cộng và phép nhân
+                    của <em>cặp</em> như sau:
                 </p><div class="scroll-wrapper">
-                    $$(a, b)+(c, d) =(a + c, b + d)$$
+                    $(a, b)+(c, d) =(a + c, b + d)$
                 </div>
-                and
+                và
                 <div class="scroll-wrapper">
-                    $$(a, b)(c, d) = (ac - bd, bc + ad).$$
+                    $(a, b)(c, d) = (ac - bd, bc + ad).$
                 </div>
                 <p></p>
                 <p>
-                    This is in fact an algebraic definition of complex numbers.
+                    Đây thực chất là một định nghĩa đại số của số phức.
 
-                    From the didactic and heuristic points of view it is preferable to have
-                    complex numbers introduced through a geometrical interpretation.
-                    But from the logical point of view the theory of <em>couples</em>
-                    is much more satisfying, since it shows the consistency of the
-                    theory of complex numbers starting from the consistency of
-                    the real numbers [<a href="#carrucio" alt="Carrucio" title="Carrucio">3</a>, pág. 175].
+                    Từ quan điểm sư phạm và khám phá, tốt hơn là có
+                    số phức được giới thiệu thông qua diễn giải hình học.
+                    Nhưng từ quan điểm logic, lý thuyết <em>cặp</em>
+                    thỏa mãn hơn nhiều, vì nó cho thấy tính nhất quán của
+                    lý thuyết số phức xuất phát từ tính nhất quán của
+                    số thực [<a href="#carrucio" alt="Carrucio" title="Carrucio">3</a>, tr. 175].
                 </p>
 
 
@@ -637,25 +633,25 @@
 
 
                 <p>
-                    Among the many mathematicians and scientists who contributed,
-                    there are three who stand out as having influenced decisively the course of
-                    development of complex analysis
+                    Trong số nhiều nhà toán học và nhà khoa học đã đóng góp,
+                    có ba người nổi bật là đã ảnh hưởng quyết định đến quá trình
+                    phát triển của giải tích phức
                     [<a href="#kline" alt="Kline" title="Kline">8</a>, Vol.2, Ch. 27].
-                    The first is Augustin-Louis Cauchy (1789-1857), who
-                    developed the theory of the complex integral calculus.
-                    By using imaginary numbers Cauchy was able to
-                    evaluate "real integrals" that heretofore could not be evaluated,
-                    obtaining stunning results such as
+                    Người đầu tiên là Augustin-Louis Cauchy (1789-1857),
+                    đã phát triển lý thuyết tích phân phức.
+                    Bằng cách sử dụng số ảo, Cauchy đã có thể
+                    tính "tích phân thực" mà trước đây không thể tính được,
+                    thu được những kết quả đáng kinh ngạc như
                 </p><div class="scroll-wrapper">
-                    $$\int_0^{\infty} \frac{\sin x}{x}\,dx=\frac{\pi}{2}$$
+                    $\int_0^{\infty} \frac{\sin x}{x}\,dx=\frac{\pi}{2}$
                 </div>
-                and
+                và
                 <div class="scroll-wrapper">
-                    $$\int_0^{\pi}\log \sin x\,dx =-\pi \log 2.$$
+                    $\int_0^{\pi}\log \sin x\,dx =-\pi \log 2.$
                 </div>
-                The evaluation of real integrals, in addition to the solution of
-                the cubic equation and the fundamental theorem of algebra,
-                proved how valuable it was to consider imaginary numbers.
+                Việc tính toán tích phân thực, ngoài việc giải
+                phương trình bậc ba và định lý cơ bản của đại số,
+                đã chứng minh việc xem xét số ảo quan trọng như thế nào.
                 <p></p>
 
 
@@ -680,15 +676,15 @@
 
 
                 <p>
-                    Finally, the other two important mathematicians are Karl Weierstrass
-                    (1815-1897) and Bernhard Riemann (1826-1866), who appeared on the
-                    mathematical scene about the middle of the nineteenth century. Weierstrass
-                    developed the theory from a starting point of convergent power series, and
-                    this approach led towards more formal algebraic developments. Riemann
-                    contributed a more geometric point of view on the study of
-                    complex functions. His ideas had a tremendous
-                    impact not only on complex analysis but upon mathematics as a whole,
-                    though his views took hold only gradually.
+                    Cuối cùng, hai nhà toán học quan trọng khác là Karl Weierstrass
+                    (1815-1897) và Bernhard Riemann (1826-1866), xuất hiện trên
+                    sân khấu toán học vào khoảng giữa thế kỷ thứ mười chín. Weierstrass
+                    phát triển lý thuyết từ điểm xuất phát của chuỗi lũy thừa hội tụ, và
+                    cách tiếp cận này dẫn đến các phát triển đại số hình thức hơn. Riemann
+                    đóng góp một quan điểm hình học hơn trong nghiên cứu về
+                    hàm phức. Ý tưởng của ông có tác động to lớn
+                    không chỉ đối với giải tích phức mà đối với toán học nói chung,
+                    mặc dù quan điểm của ông chỉ được chấp nhận từ từ.
                 </p>
 
 
@@ -699,17 +695,17 @@
 
             <div id="section5">
 
-                <h2>Final comments</h2>
+                <h2>Nhận xét cuối</h2>
 
                 <p>
-                    The foregoing descriptions of complex numbers are not the end of the story.
-                    Various developments in the nineteenth and twentieth centuries enabled us
-                    to gain a deeper insight into the role of complex numbers not only in mathematics,
-                    but also in engineering and physics.
-                    The history of complex numbers is fascinating and I highly encourage
-                    the reader to consult the primary sources cited here which
-                    could serve as a starting point to delve into the historical
-                    details that allowed the emergence and development of complex numbers.
+                    Những mô tả trước đây về số phức không phải là hết câu chuyện.
+                    Các phát triển khác nhau trong thế kỷ thứ mười chín và hai mươi đã cho phép chúng ta
+                    có cái nhìn sâu sắc hơn về vai trò của số phức không chỉ trong toán học,
+                    mà còn trong kỹ thuật và vật lý.
+                    Lịch sử của số phức rất hấp dẫn và tôi khuyến khích mạnh mẽ
+                    người đọc tham khảo các nguồn chính được trích dẫn ở đây có thể
+                    phục vụ như điểm khởi đầu để đi sâu vào các
+                    chi tiết lịch sử đã cho phép sự xuất hiện và phát triển của số phức.
                 </p>
 
                 <!--
@@ -727,7 +723,7 @@
 
             <div id="section6">
 
-                <h2>References</h2>
+                <h2>Tài liệu tham khảo</h2>
 
                 <ol class="bbtex-list">
                     <li id="bombelli">Bombelli, R. (1579). <em>L'Algebra.</em> Bologna. <a href="http://mathematica.sns.it/opere/9/" target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
@@ -763,7 +759,7 @@
                 </ol>
 
                 <p class="w3-center" style="font-size:24px">
-                    <strong>Further reading</strong>
+                    <strong>Đọc thêm</strong>
                 </p>
 
                 <ul style="line-height:28px">
@@ -847,7 +843,7 @@
     </script>
 
     <a href="terminology_notation.html" style="text-decoration: none;">
-        <p class="nextPage">Terminology and Notation <i class="fa-solid fa-angles-right"></i></p>
+        <p class="nextPage">Thuật ngữ và Ký hiệu <i class="fa-solid fa-angles-right"></i></p>
     </a>
     <!-- Ends main content -->
 
@@ -862,17 +858,17 @@
     <div class="modal-content">
       <div class="modal-header">
         <span class="close">&times;</span><br />
-        <strong>👋 Hey there!</strong>
+        <strong>👋 Xin chào!</strong>
       </div>
       <div class="modal-body">
 
         <p>
-          This interactive book is <strong>free for everybody</strong>,
-          as I believe that everyone should have access to high-quality learning
-          resources to explore and learn mathematics.  
-          That's why many users choose to contribute to my efforts. 
-          If you believe in what I do and want to help me on my journey, 
-          you can do so now with the links below: 
+          Cuốn sách tương tác này <strong>miễn phí cho mọi người</strong>,
+          vì tôi tin rằng mọi người nên có quyền tiếp cận với các tài nguyên học tập
+          chất lượng cao để khám phá và học toán học.  
+          Đó là lý do tại sao nhiều người dùng chọn đóng góp cho những nỗ lực của tôi. 
+          Nếu bạn tin tưởng vào những gì tôi làm và muốn giúp tôi trên hành trình này, 
+          bạn có thể làm điều đó ngay bây giờ với các liên kết dưới đây: 
         </p>
 
         <div class="button-container">
@@ -888,34 +884,34 @@
           </button>
           <button id="modal-link">
             <a target="_blank" href="https://jcponcemath.secure-decoration.com/">
-              <strong>Get a <i class="fa-solid fa-shirt"></i></strong>
+              <strong>Mua <i class="fa-solid fa-shirt"></i></strong>
             </a>
           </button>
         </div>
 
 
         <p>
-          Your contributions help me to maintain this site
-          and, crucially, <strong>ensure it remains freely accessible</strong> 
-          to anyone eager to explore this captivating field of mathematics 
-          <strong>—without any distracting ads</strong>.
+          Những đóng góp của bạn giúp tôi duy trì trang web này
+          và, quan trọng hơn, <strong>đảm bảo nó vẫn có thể truy cập miễn phí</strong> 
+          cho bất kỳ ai muốn khám phá lĩnh vực toán học hấp dẫn này 
+          <strong>—mà không có bất kỳ quảng cáo gây mất tập trung nào</strong>.
         </p>
 
         <p>
-          You can't contribute this time, no worries! Maybe you just want to 
-          <i class="fa-solid fa-envelope"></i> <a href="mailto:jcponcemath@gmail.com"><strong> Send a
-            comment</strong></a>
+          Bạn không thể đóng góp lần này, không sao cả! Có lẽ bạn chỉ muốn 
+          <i class="fa-solid fa-envelope"></i> <a href="mailto:jcponcemath@gmail.com"><strong> Gửi một
+            nhận xét</strong></a>
         </p>
         <br />
       </div>
       <div class="modal-footer">
-        Thank you! 🙏 I highly appreciate your support! 🤗
+        Cảm ơn bạn! 🙏 Tôi rất trân trọng sự hỗ trợ của bạn! 🤗
       </div>
     </div>
 
   </div>
   <!-- Button to Top -->
-  <button onclick="topFunction()" id="toTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <button onclick="topFunction()" id="toTop" title="Về đầu trang"><i class="fa-solid fa-arrow-up"></i></button>
 
   <hr>
 
@@ -923,14 +919,31 @@
 
   <span id="footer-elements">
     <span style="font-weight: bold;">[</span>
-    <a href="../"><i class="fa-solid fa-house"></i> Home</a>,
-    <span class="hide-small">
-      <a href="https://github.com/complex-analysis"><i class="fa-solid fa-code"></i> Source</a>,
+    <a href="../"><i class="fa-solid fa-house"></i> Trang chủ</a>,
+  <strong>
+    <span class="hide-small" style="font-size: 0.9em;">&copy; Juan Carlos Ponce Campuzano
+      2019-<script>document.write(new Date().getFullYear());</script>
+    </span>
+    <span class="hide-medium hide-large" style="font-size: 0.9em;">&copy; J.C. Ponce Campuzano
+      2019-<script>document.write(new Date().getFullYear());</script>
+    </span>
+  </strong>
+
+</footer>
+  <script src="js/mathjax.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <script src="js/scripts.js"></script>
+  <script async src="js/prism.js"></script>
+</body>
+
+</html>small">
+      <a href="https://github.com/complex-analysis"><i class="fa-solid fa-code"></i> Mã nguồn</a>,
       <a href="https://github.com/complex-analysis/complex-analysis.github.io/issues"><i
-          class="fa-solid fa-lightbulb"></i> Issues</a>,
+          class="fa-solid fa-lightbulb"></i> Vấn đề</a>,
     </span>
     <span id="donate-footer" onclick="document.getElementById('myModal').style.display='block'">
-      <i class="fa-solid fa-heart"></i> Support</span>
+      <i class="fa-solid fa-heart"></i> Hỗ trợ</span>
     <span style="font-weight: bold;">]</span>
   </span>
   
