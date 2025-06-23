@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
-  <title>  Classification of Singularities
-</title>
+  <title>Phân loại điểm kỳ dị</title>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Main info: Dublin core -->
-  <meta name="DC.Title" content="Complex Analysis">
+  <meta name="DC.Title" content="Giải Tích Phức">
   <meta name="DC.Creator" content="Juan Carlos Ponce Campuzano">
   <meta name="DC.Date" content="26-01-2019">
   <meta name="DC.Identifier" content="ISBN-13: 978-0-6485736-0-9">
   <meta name="DC.Type" content="Interactive Resource">
   <meta name="DC.Format" content="HTML">
-  <meta name="DC.Language" content="en-US">
+  <meta name="DC.Language" content="vi-VN">
   <meta name="DC.Rights" content="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 
   <!-- social media cards -->
-  <meta property="og:title" content="Complex Analysis">
-  <meta property="og:description" content="An online interactive introduction to the study of complex analysis.">
+  <meta property="og:title" content="Giải Tích Phức">
+  <meta property="og:description" content="Một giới thiệu tương tác trực tuyến về nghiên cứu giải tích phức.">
   <meta property="og:url" content="https://complex-analysis.com/">
   <meta property="og:image" content="https://complex-analysis.com/images/complex_analysis_card.jpg">
-  <meta property="og:site_name" content="Complex Analysis">
-  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Giải Tích Phức">
+  <meta property="og:locale" content="vi_VN">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="An online interactive introduction to the study of complex analysis.">
-  <meta name="twitter:title" content="Complex Analysis">
-  <meta name="twitter:description" content="An online interactive introduction to the study of complex analysis.">
+  <meta name="twitter:card" content="Một giới thiệu tương tác trực tuyến về nghiên cứu giải tích phức.">
+  <meta name="twitter:title" content="Giải Tích Phức">
+  <meta name="twitter:description" content="Một giới thiệu tương tác trực tuyến về nghiên cứu giải tích phức.">
   <meta name="twitter:site" content="@jcponcemath">
   <meta name="twitter:image" content="https://complex-analysis.com/images/complex_analysis_card.jpg">
   <meta name="twitter:creator" content="@jcponcemath">
@@ -58,16 +57,16 @@
             <span class="arrow"><i class="fa-solid fa-arrow-left"></i></span>
         </a>
         <span class="dark-mode-button" id="dark-mode-toggle"><i class="fa-regular fa-sun"></i></span>
-        <span class="support-top-button" id="donate" title="Support"
+        <span class="support-top-button" id="donate" title="Hỗ trợ"
             onclick="document.getElementById('myModal').style.display='block'">
             <i class="fa-regular fa-heart"></i></span>
     </div>
     <div class="link">
         <a href="table_of_contents.html" class="link" id="center-link">
-            <span class="content-hover-previous">Laurent Series</span>
-            <span class="content-hover">Table of Contents</span>
-            <span class="content-original">Complex Analysis</span>
-            <span class="content-hover-next">The Mandelbrot set</span>
+            <span class="content-hover-previous">Chuỗi Laurent</span>
+            <span class="content-hover">Mục lục</span>
+            <span class="content-original">Giải tích phức</span>
+            <span class="content-hover-next">Tập Mandelbrot</span>
         </a>
     </div>
     <a href="mandelbrot_set.html" class="link" id="next-link">
@@ -86,13 +85,83 @@
     <div w3-include-html="small_screen_message.html"></div>
 
     <div class="toc-chapter" id="toc-chapter">
-        <p><i class="fa-solid fa-list"></i>Contents</p>
+        <p>
+          Những đóng góp của bạn giúp tôi duy trì trang web này
+          và, quan trọng hơn, <strong>đảm bảo nó vẫn có thể truy cập miễn phí</strong> 
+          cho bất kỳ ai muốn khám phá lĩnh vực toán học hấp dẫn này 
+          <strong>—mà không có bất kỳ quảng cáo gây mất tập trung nào</strong>.
+        </p>
+
+        <p>
+          Bạn không thể đóng góp lần này, không sao cả! Có lẽ bạn chỉ muốn 
+          <i class="fa-solid fa-envelope"></i> <a href="mailto:jcponcemath@gmail.com"><strong> Gửi một
+            nhận xét</strong></a>
+        </p>
+        <br />
+      </div>
+      <div class="modal-footer">
+        Cảm ơn bạn! 🙏 Tôi rất trân trọng sự hỗ trợ của bạn! 🤗
+      </div>
+    </div>
+
+  </div>
+  <!-- Button to Top -->
+  <button onclick="topFunction()" id="toTop" title="Về đầu trang"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <hr>
+
+<footer>
+
+  <span id="footer-elements">
+    <span style="font-weight: bold;">[</span>
+    <a href="../"><i class="fa-solid fa-house"></i> Trang chủ</a>,
+    <span class="hide-small">
+      <a href="https://github.com/complex-analysis"><i class="fa-solid fa-code"></i> Mã nguồn</a>,
+      <a href="https://github.com/complex-analysis/complex-analysis.github.io/issues"><i
+          class="fa-solid fa-lightbulb"></i> Vấn đề</a>,
+    </span>
+    <span id="donate-footer" onclick="document.getElementById('myModal').style.display='block'">
+      <i class="fa-solid fa-heart"></i> Hỗ trợ</span>
+    <span style="font-weight: bold;">]</span>
+  </span>
+  
+  <br />
+
+  <a id="licence-link" rel="license"
+    href="license.html">
+    <i class="fa-brands fa-creative-commons"></i>
+    <i class="fa-brands fa-creative-commons-by"></i>
+    <i class="fa-brands fa-creative-commons-nc"></i>
+    <i class="fa-brands fa-creative-commons-sa"></i>
+  </a>
+
+  <br />
+
+  <strong style="font-size: 0.9em;">ISBN: 978-0-6485736-0-9</strong> <br>
+  <strong>
+    <span class="hide-small" style="font-size: 0.9em;">&copy; Juan Carlos Ponce Campuzano
+      2019-<script>document.write(new Date().getFullYear());</script>
+    </span>
+    <span class="hide-medium hide-large" style="font-size: 0.9em;">&copy; J.C. Ponce Campuzano
+      2019-<script>document.write(new Date().getFullYear());</script>
+    </span>
+  </strong>
+
+</footer>
+  <script src="js/mathjax.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <script src="js/scripts.js"></script>
+  <script async src="js/prism.js"></script>
+</body>
+
+</html><i class="fa-solid fa-list"></i>Nội dung</p>
         <ul>
-            <li><a href="#section1">Classification</a></li>
-            <li><a href="#section2">Poles</a></li>
-            <li><a href="#section3">Removable singularity</a></li>
-            <li><a href="#section4">Essential singularity</a></li>
-            <li><a href="#section5">Final remark</a></li>
+            <li><a href="#section1">Phân loại</a></li>
+            <li><a href="#section2">Cực điểm</a></li>
+            <li><a href="#section3">Điểm kỳ dị loại bỏ được</a></li>
+            <li><a href="#section4">Điểm kỳ dị cốt yếu</a></li>
+            <li><a href="#section5">Nhận xét cuối</a></li>
             <!-- Add more sections as needed -->
         </ul>
     </div>
@@ -104,24 +173,24 @@
 
             <div id="section1">
 
-                <h1>Classification of Singularities</h1>
+                <h1>Phân loại điểm kỳ dị</h1>
 
                 <hr>
 
                 <p>
-                    The portion
+                    Phần
                     \begin{eqnarray}\label{principal}
                     \frac{b_1}{z-z_0}+\frac{b_2}{(z-z_0)^2}+\frac{b_3}{(z-z_0)^3}+\cdots
                     \end{eqnarray}
-                    of the <a href="laurent_series.html#laurent-series-theorem">Laurent series</a>,
-                    involving negative powers of $z - z_0,$ is called the
-                    <a href="laurent_series.html#principal-part"><em>principal part</em></a> of $f$
-                    at $z_0.$ The coefficient $b_1$ in equation
-                    (\ref{principal}), turns out to play a very
-                    special role in complex analysis.
-                    It is given a special name: the <em>residue</em> of the function $f(z).$
-                    In this section we will focus on the principal part to identify the isolated
-                    singular point $z_0$ as one of three special types.
+                    của <a href="laurent_series.html#laurent-series-theorem">chuỗi Laurent</a>,
+                    liên quan đến các lũy thừa âm của $z - z_0,$ được gọi là
+                    <a href="laurent_series.html#principal-part"><em>phần chính</em></a> của $f$
+                    tại $z_0.$ Hệ số $b_1$ trong phương trình
+                    (\ref{principal}), hóa ra đóng một vai trò
+                    rất đặc biệt trong giải tích phức.
+                    Nó được đặt một tên đặc biệt: <em>thặng dư</em> của hàm $f(z).$
+                    Trong phần này chúng ta sẽ tập trung vào phần chính để xác định điểm
+                    kỳ dị cô lập $z_0$ là một trong ba loại đặc biệt.
                 </p>
 
             </div>
@@ -130,62 +199,61 @@
 
             <div id="section2">
 
-                <h2>Poles</h2>
+                <h2>Cực điểm</h2>
 
                 <p>
-                    If the principal part of $f$ at $z_0$ contains at least one nonzero term but the number
-                    of such terms is only finite, then there exists a integer $m \geq 1$ such that
-                    $$b_m\neq 0 \quad\text{and} \quad b_{k}=0\quad \text{for}\quad k\gt m.$$
-                    In this case, the isolated singular point $z_0$ is called a <em>pole of order</em>
-                    $m.$ A pole of order $m = 1$ is usually referred to as a <em>simple pole</em>.
+                    Nếu phần chính của $f$ tại $z_0$ chứa ít nhất một số hạng khác không nhưng số
+                    số hạng như vậy chỉ là hữu hạn, thì tồn tại một số nguyên $m \geq 1$ sao cho
+                    $$b_m\neq 0 \quad\text{và} \quad b_{k}=0\quad \text{với}\quad k\gt m.$$
+                    Trong trường hợp này, điểm kỳ dị cô lập $z_0$ được gọi là <em>cực điểm bậc</em>
+                    $m.$ Một cực điểm bậc $m = 1$ thường được gọi là <em>cực điểm đơn</em>.
                 </p>
 
 
 
-                <h3>Examples</h3>
+                <h3>Ví dụ</h3>
 
                 <p>
-                    Consider the functions
+                    Xét các hàm
                     </p><div class="scroll-wrapper">
-                        $$f(z)=\dfrac{e^z-1}{z^2},\qquad g(z)=\frac{\cos z}{z^2}\qquad\text{and}\qquad h(z)=\frac{\sinh z}{z^4},$$
+                        $$f(z)=\dfrac{e^z-1}{z^2},\qquad g(z)=\frac{\cos z}{z^2}\qquad\text{và}\qquad h(z)=\frac{\sinh z}{z^4},$$
                     </div>
-                    with an isolated singularity at $z_0=0.$
-                    Figures 1, 2 and 3 show the <a href="domain_coloring.html#enhanced-phase-portraits">enhanced phase
-                        portraits</a> of these functions defined
-                    in the square $|\text{Re }z|\lt 3$ and $|\text{Im }z|\lt 3.$
+                    với một điểm kỳ dị cô lập tại $z_0=0.$
+                    Hình 1, 2 và 3 cho thấy <a href="domain_coloring.html#enhanced-phase-portraits">chân dung pha nâng cao</a> của các hàm này được định nghĩa
+                    trong hình vuông $|\text{Re }z|\lt 3$ và $|\text{Im }z|\lt 3.$
                 <p></p>
 
                 <!--https://editor.p5js.org/jcponce/sketches/sfoT8EUys
 		https://umu.diva-portal.org/smash/get/diva2:1251778/FULLTEXT01.pdf-->
                 <figure>
-                    <img src="../images/chp05/pole01.jpg" alt="Pole order 1" title="Pole order 1" style="width:55%;">
+                    <img src="../images/chp05/pole01.jpg" alt="Cực điểm bậc 1" title="Cực điểm bậc 1" style="width:55%;">
                     <figcaption>
                          $f(z)=\dfrac{e^z-1}{z^2}.$
                     </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="../images/chp05/pole02.jpg" alt="Pole order 2" title="Pole order 2" style="width:55%;">
+                    <img src="../images/chp05/pole02.jpg" alt="Cực điểm bậc 2" title="Cực điểm bậc 2" style="width:55%;">
                     <figcaption>
                         $g(z)=\dfrac{\cos z}{z^2}.$
                     </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="../images/chp05/pole03.jpg" alt="Pole order 3" title="Pole order 3" style="width:55%;">
+                    <img src="../images/chp05/pole03.jpg" alt="Cực điểm bậc 3" title="Cực điểm bậc 3" style="width:55%;">
                     <figcaption>
                         $h(z)=\dfrac{\sinh z}{z^4}.$
                     </figcaption>
                 </figure>
 
                 <p>
-                    Now from the <a href="domain_coloring.html#enhanced-phase-portraits">enhanced phase portraits</a>
-                    we can observe that $z_0=0$ is in fact a pole which order can also be easily seen,
-                    it is just the number of isochromatic rays of one (arbitrarily chosen)
-                    color which meet at that point.
-                    Thus we can claim that $f,$ $g$ and $h$ have poles of order 1, 2 and 3; respectively.
-                    To confirm this let's calculate the Laurent series representation centered
-                    at $0.$ First observe that
+                    Bây giờ từ <a href="domain_coloring.html#enhanced-phase-portraits">chân dung pha nâng cao</a>
+                    chúng ta có thể quan sát rằng $z_0=0$ thực sự là một cực điểm mà bậc cũng có thể dễ dàng nhìn thấy,
+                    đó chỉ là số tia đẳng sắc của một (được chọn tùy ý)
+                    màu gặp nhau tại điểm đó.
+                    Do đó chúng ta có thể khẳng định rằng $f,$ $g$ và $h$ có cực điểm bậc 1, 2 và 3; tương ứng.
+                    Để xác nhận điều này, hãy tính biểu diễn chuỗi Laurent tâm
+                    tại $0.$ Đầu tiên quan sát rằng
                     </p><div class="scroll-wrapper">
                         \begin{eqnarray*}
                     f(z)&amp;=&amp;\frac{1}{z^2}\left[ \left( 1 + z + \frac{z^2}{2!}+\cdots \right) - 1 \right]\\
@@ -193,7 +261,7 @@
                     +\frac{1}{2!}+\frac{z}{3!}+\frac{z^2}{4!}+\cdots, \quad (0\lt|z|\lt\infty).
                     \end{eqnarray*}
                     </div>
-                    Thus we can see that $f$ has a simple pole. On the other hand
+                    Do đó chúng ta có thể thấy rằng $f$ có một cực điểm đơn. Mặt khác
                     <div class="scroll-wrapper">
                         \begin{eqnarray*}
                     g(z)&amp;=&amp;\frac{1}{z^2}\left(1-\frac{z^2}{2!}+\frac{z^4}{4!}-\cdots
@@ -202,8 +270,8 @@
                     \end{eqnarray*}
                     </div>
                     
-                    then $g$ has a pole of order 2.
-                    Finally, $h$ has a pole of order 3 since
+                    thì $g$ có cực điểm bậc 2.
+                    Cuối cùng, $h$ có cực điểm bậc 3 vì
                     <div class="scroll-wrapper">
                         \begin{eqnarray*}
                     h(z)&amp;=&amp;\frac{1}{z^4}\left(z+\frac{z^3}{3!}+\frac{z^5}{5!}+\cdots \right)\\
@@ -220,84 +288,83 @@
 
             <div id="section3">
 
-                <h2>Removable singularity</h2>
+                <h2>Điểm kỳ dị loại bỏ được</h2>
 
                 <p>
-                    When every $b_n$ is zero, so that
+                    Khi mọi $b_n$ đều bằng không, sao cho
                     </p><div class="scroll-wrapper">
                         \begin{eqnarray}\label{residue003}
                     f(z)=\sum_{n=0}^{\infty} a_n(z-z_0)^n,\quad (0\lt |z-z_0| \lt R_2).
                     \end{eqnarray}
                     </div>
-                    In this case, $z_0$ is known as a <em>removable singular point</em>. Note that the residue at a
-                    removable
-                    singular point is always zero. If we define, or possibly redefine, $f$ at $z_0$ so that
-                    $f(z_0) = a_0,$ expansion (\ref{residue003}) becomes valid throughout the entire disk $|z - z_0| \lt
+                    Trong trường hợp này, $z_0$ được biết đến như một <em>điểm kỳ dị loại bỏ được</em>. Lưu ý rằng thặng dư tại một
+                    điểm kỳ dị loại bỏ được
+                    luôn bằng không. Nếu chúng ta định nghĩa, hoặc có thể định nghĩa lại, $f$ tại $z_0$ sao cho
+                    $f(z_0) = a_0,$ khai triển (\ref{residue003}) trở nên hợp lệ trong toàn bộ đĩa $|z - z_0| \lt
                     R_2.$
-                    Since a power series always represents an analytic function interior to its circle of
-                    convergence, it follows that $f$ is analytic at $z_0$ when it is assigned the
-                    value $a_0$ there. The singularity $z_0$ is, therefore, removed.
+                    Vì một chuỗi lũy thừa luôn biểu diễn một hàm giải tích trong vòng tròn hội tụ
+                    của nó, nên suy ra rằng $f$ là giải tích tại $z_0$ khi nó được gán
+                    giá trị $a_0$ ở đó. Do đó, điểm kỳ dị $z_0$ được loại bỏ.
                 <p></p>
 
 
 
-                <h3>Examples</h3>
+                <h3>Ví dụ</h3>
 
                 <p>
-                    Consider the functions
+                    Xét các hàm
                     </p><div class="scroll-wrapper">
-                        $$f(z)=\frac{1-\cos z}{z^2},\qquad g(z)=\frac{\sin z}{z}\qquad\text{and}\qquad h(z)=\frac{z}{e^z-1}.$$
+                        $$f(z)=\frac{1-\cos z}{z^2},\qquad g(z)=\frac{\sin z}{z}\qquad\text{và}\qquad h(z)=\frac{z}{e^z-1}.$$
                     </div>
 
-                    Figures 4, 5 and 6 show the enhanced phase portraits of these functions defined
-                    in the square $|\text{Re }z|\lt 8$ and $|\text{Im }z|\lt 8.$
+                    Hình 4, 5 và 6 cho thấy chân dung pha nâng cao của các hàm này được định nghĩa
+                    trong hình vuông $|\text{Re }z|\lt 8$ và $|\text{Im }z|\lt 8.$
                 <p></p>
 
                 <figure>
-                    <img src="../images/chp05/rmv-sing-01.jpg" alt="Removable singularity" title="Removable singularity" style="width:55%;">
+                    <img src="../images/chp05/rmv-sing-01.jpg" alt="Điểm kỳ dị loại bỏ được" title="Điểm kỳ dị loại bỏ được" style="width:55%;">
                     <figcaption>
                         $f(z)=\dfrac{1-\cos z}{z^2}.$
                     </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="../images/chp05/rmv-sing-02.jpg" alt="Removable singularity" title="Removable singularity" style="width:55%;">
+                    <img src="../images/chp05/rmv-sing-02.jpg" alt="Điểm kỳ dị loại bỏ được" title="Điểm kỳ dị loại bỏ được" style="width:55%;">
                     <figcaption>
                         $g(z)=\dfrac{\sin z}{z}.$
                     </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="../images/chp05/rmv-sing-03.jpg" alt="Removable singularity" title="Removable singularity" style="width:55%;">
+                    <img src="../images/chp05/rmv-sing-03.jpg" alt="Điểm kỳ dị loại bỏ được" title="Điểm kỳ dị loại bỏ được" style="width:55%;">
                     <figcaption>
                          $h(z)=\dfrac{z}{e^z-1}.$
                     </figcaption>
                 </figure>
 
                 <p>
-                    We notice
-                    that $f$ has a singularity at $z_0=0$ but in this case the plot does not show
-                    isochromatic lines meeting at that point. This indicates that the singularity
-                    might be removable.
+                    Chúng ta nhận thấy
+                    rằng $f$ có một điểm kỳ dị tại $z_0=0$ nhưng trong trường hợp này đồ thị không hiển thị
+                    các đường đẳng sắc gặp nhau tại điểm đó. Điều này cho thấy rằng điểm kỳ dị
+                    có thể loại bỏ được.
                 </p>
 
                 <p>
-                    We can confirm this claim easily from the Laurent series representation:
+                    Chúng ta có thể xác nhận tuyên bố này một cách dễ dàng từ biểu diễn chuỗi Laurent:
                     \begin{eqnarray*}
                     f(z)&amp;=&amp;\frac{1}{z^2}\left[1-\left(1-\frac{z^2}{2!}+\frac{z^4}{4!}-\frac{z^6}{6!}+\cdots
                     \right)\right]\\
                     &amp;=&amp;\frac{1}{2!}-\frac{z^2}{4!}+\frac{z^4}{6!}-\cdots, \quad (0\lt |z|\lt \infty).
                     \end{eqnarray*}
-                    In this case, when the value $f(0)=1/2$ is assigned, $f$ becomes entire. Furthermore, we can
-                    intuitively
-                    observe that since $z=0$ is a removable singular point of $f,$
-                    then $f$ must be analytic and bounded in some deleted neighborhood $0\lt |z|\lt \varepsilon.$
+                    Trong trường hợp này, khi giá trị $f(0)=1/2$ được gán, $f$ trở thành toàn cục. Hơn nữa, chúng ta có thể
+                    quan sát một cách trực giác rằng vì $z=0$ là một điểm kỳ dị loại bỏ được của $f,$
+                    thì $f$ phải là giải tích và bị chặn trong một lân cận bị xóa nào đó $0\lt |z|\lt \varepsilon.$
 
                 </p>
 
                 <div class="practice">
-                    <p><strong>Exercise 1:</strong> Find the Laurent series expansion for $g$ and $h$ to confirm that
-                        they have removable singularities at $z_0=0.$
+                    <p><strong>Bài tập 1:</strong> Tìm khai triển chuỗi Laurent cho $g$ và $h$ để xác nhận rằng
+                        chúng có điểm kỳ dị loại bỏ được tại $z_0=0.$
                     </p>
                 </div>
 
@@ -307,20 +374,19 @@
 
             <div id="section4">
 
-                <h2>Essential singularity</h2>
+                <h2>Điểm kỳ dị cốt yếu</h2>
 
                 <p id="essential-singularity">
-                    If an infinite number of the coefficients $b_n$ in the principal part (\ref{principal}) are nonzero,
-                    then
-                    $z_0$ is said to be an <em>essential singular</em> point of $f.$
+                    Nếu một số vô hạn các hệ số $b_n$ trong phần chính (\ref{principal}) khác không,
+                    thì $z_0$ được gọi là một <em>điểm kỳ dị cốt yếu</em> của $f.$
                 </p>
 
 
 
-                <h3>Examples</h3>
+                <h3>Ví dụ</h3>
 
                 <p>
-                    The function $$f(z)=\exp\left(\frac{1}{z}\right)$$ has an essential singularity at $z_0=0$ since
+                    Hàm $$f(z)=\exp\left(\frac{1}{z}\right)$$ có một điểm kỳ dị cốt yếu tại $z_0=0$ vì
                     \begin{eqnarray*}
                     f(z)&amp;=&amp;1+\frac{1}{1!}\cdot\frac{1}{z}+\frac{1}{2!}\cdot
                     \frac{1}{z^2}+\cdots\\
@@ -329,54 +395,53 @@
                 </p>
 
                 <p>
-                    Figure 7 shows the enhanced portrait of $f$ in the square
-                    ${|\text{Re }z|\lt 0.5}$ and ${|\text{Im }z|\lt 0.5}.$ The first thing
-                    we notice is that the behaviour of $f$ near the essential singular
-                    point is quite irregular. Observe how the isochromatic lines, near
-                    $z_0=0,$ form infinite self-contained figure-eight shapes.
+                    Hình 7 cho thấy chân dung nâng cao của $f$ trong hình vuông
+                    ${|\text{Re }z|\lt 0.5}$ và ${|\text{Im }z|\lt 0.5}.$ Điều đầu tiên
+                    chúng ta nhận thấy là hành vi của $f$ gần điểm kỳ dị cốt yếu
+                    khá bất thường. Quan sát cách các đường đẳng sắc, gần
+                    $z_0=0,$ tạo thành các hình số tám tự chứa vô hạn.
                 </p>
 
                 <figure>
-                    <img src="../images/chp05/essential-01.jpg" alt="Essential singularity" title="Essential singularity" style="width:55%;">
+                    <img src="../images/chp05/essential-01.jpg" alt="Điểm kỳ dị cốt yếu" title="Điểm kỳ dị cốt yếu" style="width:55%;">
                     <figcaption>
-                         $\exp(1/z)$ defined on $[-0.5, 0.5]\times[-0.5, 0.5].$
+                         $\exp(1/z)$ được định nghĩa trên $[-0.5, 0.5]\times[-0.5, 0.5].$
                     </figcaption>
                 </figure>
 
                 <p>
-                    In fact, a neighborhood of $z_0=0$ intersects infinitely many isochromatic
-                    lines of the phase portrait of one and the same colour
-                    [<a href="bibliography.html#wegert-2012" target="_blank">Wegert, 2012, p. 181</a>].
-                    This fact can be appreciated intuitively by plotting the simple
-                    phase portrait of $\exp(1/z)$ on a smaller region, as shown in
-                    Figure 8.
+                    Thực tế, một lân cận của $z_0=0$ giao với vô số
+                    đường đẳng sắc của chân dung pha của cùng một màu
+                    [<a href="bibliography.html#wegert-2012" target="_blank">Wegert, 2012, tr. 181</a>].
+                    Sự thật này có thể được đánh giá một cách trực giác bằng cách vẽ
+                    chân dung pha đơn giản của $\exp(1/z)$ trên một vùng nhỏ hơn, như được hiển thị trong
+                    Hình 8.
                 </p>
 
                 <figure>
-                    <img src="../images/chp05/zoom-essential.gif" alt="Essential singularity" title="Essential singularity" style="width:55%;">
+                    <img src="../images/chp05/zoom-essential.gif" alt="Điểm kỳ dị cốt yếu" title="Điểm kỳ dị cốt yếu" style="width:55%;">
                     <figcaption>
-                         Simple phase portrait: A closer view to the essential singularity.
+                         Chân dung pha đơn giản: Nhìn gần hơn vào điểm kỳ dị cốt yếu.
                     </figcaption>
                 </figure>
 
                 <p>
-                    Another example with an essential singularity at the origin is the function
+                    Một ví dụ khác với điểm kỳ dị cốt yếu tại gốc tọa độ là hàm
                     $$g(z) = (z - 1) \cos\left(\frac{1}{z}\right)$$
-                    Figure 9 shows the enhanced phase portrait of $g$ in the square $|\text{Re } z| \lt 0.3$ and
+                    Hình 9 cho thấy chân dung pha nâng cao của $g$ trong hình vuông $|\text{Re } z| \lt 0.3$ và
                     $|\text{Im } z| \lt 0.3.$
                 </p>
 
                 <figure>
-                    <img src="../images/chp05/essential-03.jpg" alt="Essential singularity" title="Essential singularity" style="width:55%;">
+                    <img src="../images/chp05/essential-03.jpg" alt="Điểm kỳ dị cốt yếu" title="Điểm kỳ dị cốt yếu" style="width:55%;">
                     <figcaption>
                          $(z - 1) \cos(1/z).$
                     </figcaption>
                 </figure>
 
                 <div class="practice">
-                    <p><strong>Exercise 2:</strong> Find the Laurent series expansion for $(z − 1) \cos(1/z)$ to confirm
-                        that
-                        it has an essential singularity at $z_0=0.$
+                    <p><strong>Bài tập 2:</strong> Tìm khai triển chuỗi Laurent cho $(z − 1) \cos(1/z)$ để xác nhận
+                        rằng nó có một điểm kỳ dị cốt yếu tại $z_0=0.$
                     </p>
                 </div>
 
@@ -386,30 +451,29 @@
 
             <div id="section5">
 
-                <h2>Final remark</h2>
+                <h2>Nhận xét cuối</h2>
 
 
                 <p>
 
-                    Phase portraits are quite useful to understand
-                    the behaviour of functions near isolated singularities.
-                    Figures 7 and 9 indicate a rather wild behavior of these functions in
-                    a neighborhood of essential singularities, in comparison with poles and
-                    removable singular points.
-                    In addition, they can be used to explore and comprehend,
-                    from a geometric point of view,
-                    more abstract mathematical results such as the
-                    <a href="https://umu.diva-portal.org/smash/get/diva2:1251778/FULLTEXT01.pdf" target="_blank">Great
-                        Picard Theorem</a>,
-                    which tells us that any analytic function with an essential singularity at $z_0$
-                    takes on all possible complex values (with at most a single exception) infinitely
-                    often in any neighborhood of $z_0.$
+                    Chân dung pha khá hữu ích để hiểu
+                    hành vi của các hàm gần các điểm kỳ dị cô lập.
+                    Hình 7 và 9 cho thấy hành vi khá hoang dã của các hàm này trong
+                    một lân cận của các điểm kỳ dị cốt yếu, so với cực điểm và
+                    điểm kỳ dị loại bỏ được.
+                    Ngoài ra, chúng có thể được sử dụng để khám phá và hiểu,
+                    từ quan điểm hình học,
+                    các kết quả toán học trừu tượng hơn như
+                    <a href="https://umu.diva-portal.org/smash/get/diva2:1251778/FULLTEXT01.pdf" target="_blank">Định lý Picard lớn</a>,
+                    nói với chúng ta rằng bất kỳ hàm giải tích nào có điểm kỳ dị cốt yếu tại $z_0$
+                    nhận tất cả các giá trị phức có thể (với nhiều nhất một ngoại lệ duy nhất) vô số
+                    lần trong bất kỳ lân cận nào của $z_0.$
                 </p>
 
                 <figure>
-                    <img src="../images/chp05/jacobi-series.jpg" alt="Essential singularity" title="Essential singularity" style="width:60%;">
+                    <img src="../images/chp05/jacobi-series.jpg" alt="Điểm kỳ dị cốt yếu" title="Điểm kỳ dị cốt yếu" style="width:60%;">
                     <figcaption>
-                         $\displaystyle\sum_{k=-\infty}^{\infty}q^{k^2}z^k,$ with $q=0.97e^{i\pi/6}.$
+                         $\displaystyle\sum_{k=-\infty}^{\infty}q^{k^2}z^k,$ với $q=0.97e^{i\pi/6}.$
                     </figcaption>
                 </figure>
 
@@ -424,10 +488,10 @@
         </article>
     </main>
 
-    <button onclick="topFunction()" id="toTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <button onclick="topFunction()" id="toTop" title="Về đầu trang"><i class="fa-solid fa-arrow-up"></i></button>
 
     <a href="mandelbrot_set.html" style="text-decoration: none;">
-        <p class="nextPage">The Mandelbrot Set <i class="fa-solid fa-angles-right"></i></p>
+        <p class="nextPage">Tập Mandelbrot <i class="fa-solid fa-angles-right"></i></p>
     </a>
     <!-- Ends main content -->
 
@@ -442,17 +506,17 @@
     <div class="modal-content">
       <div class="modal-header">
         <span class="close">&times;</span><br />
-        <strong>👋 Hey there!</strong>
+        <strong>👋 Xin chào!</strong>
       </div>
       <div class="modal-body">
 
         <p>
-          This interactive book is <strong>free for everybody</strong>,
-          as I believe that everyone should have access to high-quality learning
-          resources to explore and learn mathematics.  
-          That's why many users choose to contribute to my efforts. 
-          If you believe in what I do and want to help me on my journey, 
-          you can do so now with the links below: 
+          Cuốn sách tương tác này <strong>miễn phí cho mọi người</strong>,
+          vì tôi tin rằng mọi người nên có quyền tiếp cận với các tài nguyên học tập
+          chất lượng cao để khám phá và học toán học.  
+          Đó là lý do tại sao nhiều người dùng chọn đóng góp cho những nỗ lực của tôi. 
+          Nếu bạn tin tưởng vào những gì tôi làm và muốn giúp tôi trên hành trình này, 
+          bạn có thể làm điều đó ngay bây giờ với các liên kết dưới đây: 
         </p>
 
         <div class="button-container">
@@ -468,34 +532,34 @@
           </button>
           <button id="modal-link">
             <a target="_blank" href="https://jcponcemath.secure-decoration.com/">
-              <strong>Get a <i class="fa-solid fa-shirt"></i></strong>
+              <strong>Mua <i class="fa-solid fa-shirt"></i></strong>
             </a>
           </button>
         </div>
 
 
         <p>
-          Your contributions help me to maintain this site
-          and, crucially, <strong>ensure it remains freely accessible</strong> 
-          to anyone eager to explore this captivating field of mathematics 
-          <strong>—without any distracting ads</strong>.
+          Những đóng góp của bạn giúp tôi duy trì trang web này
+          và, quan trọng hơn, <strong>đảm bảo nó vẫn có thể truy cập miễn phí</strong> 
+          cho bất kỳ ai muốn khám phá lĩnh vực toán học hấp dẫn này 
+          <strong>—mà không có bất kỳ quảng cáo gây mất tập trung nào</strong>.
         </p>
 
         <p>
-          You can't contribute this time, no worries! Maybe you just want to 
-          <i class="fa-solid fa-envelope"></i> <a href="mailto:jcponcemath@gmail.com"><strong> Send a
-            comment</strong></a>
+          Bạn không thể đóng góp lần này, không sao cả! Có lẽ bạn chỉ muốn 
+          <i class="fa-solid fa-envelope"></i> <a href="mailto:jcponcemath@gmail.com"><strong> Gửi một
+            nhận xét</strong></a>
         </p>
         <br />
       </div>
       <div class="modal-footer">
-        Thank you! 🙏 I highly appreciate your support! 🤗
+        Cảm ơn bạn! 🙏 Tôi rất trân trọng sự hỗ trợ của bạn! 🤗
       </div>
     </div>
 
   </div>
   <!-- Button to Top -->
-  <button onclick="topFunction()" id="toTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <button onclick="topFunction()" id="toTop" title="Về đầu trang"><i class="fa-solid fa-arrow-up"></i></button>
 
   <hr>
 
@@ -503,14 +567,31 @@
 
   <span id="footer-elements">
     <span style="font-weight: bold;">[</span>
-    <a href="../"><i class="fa-solid fa-house"></i> Home</a>,
-    <span class="hide-small">
-      <a href="https://github.com/complex-analysis"><i class="fa-solid fa-code"></i> Source</a>,
+    <a href="../"><i class="fa-solid fa-house"></i> Trang chủ</a>,
+  <strong>
+    <span class="hide-small" style="font-size: 0.9em;">&copy; Juan Carlos Ponce Campuzano
+      2019-<script>document.write(new Date().getFullYear());</script>
+    </span>
+    <span class="hide-medium hide-large" style="font-size: 0.9em;">&copy; J.C. Ponce Campuzano
+      2019-<script>document.write(new Date().getFullYear());</script>
+    </span>
+  </strong>
+
+</footer>
+  <script src="js/mathjax.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <script src="js/scripts.js"></script>
+  <script async src="js/prism.js"></script>
+</body>
+
+</html>small">
+      <a href="https://github.com/complex-analysis"><i class="fa-solid fa-code"></i> Mã nguồn</a>,
       <a href="https://github.com/complex-analysis/complex-analysis.github.io/issues"><i
-          class="fa-solid fa-lightbulb"></i> Issues</a>,
+          class="fa-solid fa-lightbulb"></i> Vấn đề</a>,
     </span>
     <span id="donate-footer" onclick="document.getElementById('myModal').style.display='block'">
-      <i class="fa-solid fa-heart"></i> Support</span>
+      <i class="fa-solid fa-heart"></i> Hỗ trợ</span>
     <span style="font-weight: bold;">]</span>
   </span>
   
